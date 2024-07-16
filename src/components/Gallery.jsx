@@ -77,7 +77,7 @@ export function GalleryComponent() {
   ];
 
   return (
-    <div className="bg-gradient-to-b from-[#171717] from-80% lg:from-75% to-white to-20% lg:to-25% h-[180vh] md:h-[120vh] lg:h-[110vh] xl:h-[125vh] border-2  text-white">
+    <div className="bg-gradient-to-b from-[#171717] from-80% lg:from-75% to-white to-20% lg:to-25% h-[180vh] md:h-[120vh] lg:h-[110vh] xl:h-[75vh] border-2  text-white">
       <div className="flex justify-center items-center">
         <div className="w-full h-screen mx-5 md:mx-14">
           <div className="text-xs mt-10 flex flex-row underline gap-2">

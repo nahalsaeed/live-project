@@ -54,9 +54,9 @@ export default function Footer() {
                 <div className='setCenter'>
                     <div className='w-[82%]'>
                         <div className='flex justify-center items-center h-auto'>
-                            <div className=" grid grid-cols-1  md:grid-cols-2 lg:grid-cols-5 ">
+                            <div className=" grid grid-cols-12  gap-3">
                                 {footerData.map((section, index) => (
-                                    <div key={index} className=" ml-[30%] lg:ml-[0%]">
+                                    <div key={index} className=" ml-[30%] md:ml-[0%] lg:ml-[0%] col-span-6 order-1 md:order-5 lg:order-none  lg:col-span-2">
                                         <h2 className="font-bold mb-2">{section.title}</h2>
                                         <ul className='text-sm'>
                                             {section.items.map((item, idx) => (
@@ -70,13 +70,13 @@ export default function Footer() {
                                         </ul>
                                     </div>
                                 ))}
-                                <div className='flex flex-row gap-10 justify-center items-start md:ml-[60%] lg:md:ml-[0%] mt-2'>
+                                <div className='flex flex-row gap-3 md:gap-10 col-span-12 lg:col-span-4 justify-center items-start md:-ml-[10%] lg:md:ml-[0%] mt-2'>
                                     <div className="">
-                                        <Image src={leaf} alt='leaf' />
+                                        <Image src={leaf} alt='leaf' className=''/>
                                         <p className='font-bold text-base text-nowrap'>NEW ZEALAND</p>
                                         <p className='text-zinc-400 text-xs'>Tourism</p>
                                     </div>
-                                    <div><hr className='bg-zinc-500 rotate mt-4 w-[2px] h-20' /></div>
+                                    <div><hr className='bg-zinc-500 rotate mt-4 w-[2px] h-20 hidden md:block' /></div>
                                     <Image src={logo} className='items-start mt-7' alt='logo' />
                                 </div>
                             </div>
