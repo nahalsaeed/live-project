@@ -1,0 +1,127 @@
+
+"use client";
+import { useState, useEffect } from "react";
+import Image from "next/image";
+import { FaBars, FaTimes } from "react-icons/fa";
+import Splitdylogo from "@/app/assets/Splitdylogo.png";
+
+export default function Header() {
+  const [activeLink, setActiveLink] = useState("Places to visit");
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const handleLinkClick = (link) => {
+    setActiveLink(link);
+    setIsMenuOpen(false); // Close the menu when a link is clicked
+  };
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  useEffect(() => {
+    if (isMenuOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+  }, [isMenuOpen]);
+
+  return (
+    <header className="bg-black text-white w-screen sticky top-0 z-50">
+      <div className="container mx-auto flex justify-between items-center p-4">
+        <div className="flex items-center">
+          <Image src={Splitdylogo} alt="Splitdy logo" width={150} height={50} />
+        </div>
+        <nav className="hidden lg:flex cursor-pointer">
+          <ul className="flex space-x-8 text-xs">
+            {[
+              "Places to visit",
+              "Things to do",
+              "Find accommodation",
+              "Plan your trip",
+            ].map((link) => (
+              <li key={link}>
+                <a
+                  href="#"
+                  className={`hover:text-gray-400 ${
+                    activeLink === link ? "underline" : ""
+                  }`}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    handleLinkClick(link);
+                  }}
+                >
+                  {link}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </nav>
+        <div className="flex items-center space-x-2 mr-[20px]">
+          <div className="block ">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20px"
+              height="20px"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <path
+                d="M16.6725 16.6412L21 21M19 11C19 15.4183 15.4183 19 11 19C6.58172 19 3 15.4183 3 11C3 6.58172 6.58172 3 11 3C15.4183 3 19 6.58172 19 11Z"
+                stroke="#FFFFFF"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </svg>
+          </div>
+          <div className="hidden lg:flex">
+            <select className="bg-transparent text-sm text-white p-2 rounded focus:outline-none focus:ring-2 focus:ring-white">
+              <option className="text-black hover:text-white">United Kingdom</option>
+              <option className="text-black hover:text-white">Other Lang</option>
+            </select>
+          </div>
+          <div className="lg:hidden cursor-pointer" onClick={toggleMenu}>
+            {isMenuOpen ? 
+            <FaTimes size={24} /> : <FaBars size={24} />}
+          </div>
+        </div>
+      </div>
+
+      {isMenuOpen && (
+        
+        <nav className="xl:hidden bg-black text-white p-4 h-[100vh]">
+          <ul className="flex flex-col space-y-4 text-xs">
+            {[
+              "Places to visit",
+              "Things to do",
+              "Find accommodation",
+              "Plan your trip",
+            ].map((link) => (
+              <li key={link}>
+                <a
+                  href="#"
+                  className={`hover:text-gray-400 ${
+                    activeLink === link ? "underline" : ""
+                  }`}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    handleLinkClick(link);
+                  }}
+                >
+                  {link}
+                </a>
+              </li>
+            ))}
+            <li className="flex items-center">
+              <select className="bg-transparent w-auto text-xs ml-[-5px] text-white rounded focus:outline-none focus:ring-2 focus:ring-white">
+                <option className="text-black hover:text-white">United Kingdom</option>
+                <option className="text-black hover:text-white">Other Lang</option>
+              </select>
+            </li>
+          </ul>
+        </nav>
+      )}
+    </header>
+  );
+}

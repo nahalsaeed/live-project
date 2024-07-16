@@ -1,0 +1,35 @@
+@tailwind base;
+  @tailwind components;
+  @tailwind utilities;
+  
+
+  /* components/StyledHeading.module.css */
+.boldHeadings{
+  font-family: sans-serif;
+  font-weight: bold;
+  /* font-size: 3rem; 5xl in Tailwind */
+  margin-top: 4rem; /* mt-16 in Tailwind */
+  margin-bottom: 1.5rem; /* my-6 in Tailwind */
+}
+.setCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: auto;
+
+}
+
+.gallerySection {
+  height: 436px !important;
+  width: max-content !important;
+}
+
+.tags-container::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+.tags-container {
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scrollbar-width: none;  /* Firefox */
+}

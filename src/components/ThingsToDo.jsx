@@ -1,0 +1,101 @@
+"use client"
+import { useState } from 'react';
+import Image from "next/image";
+import Category from "@/app/assets/Category.png";
+import Map from "@/app/assets/Map.png";
+import Card from "./Card";
+import card1 from "@/app/assets/card1.png";
+import card2 from "@/app/assets/card2.png";
+import card3 from "@/app/assets/card3.png";
+import card4 from "@/app/assets/card4.png";
+import { PiArrowRightThin } from "react-icons/pi";
+import "@/app/globals.css";
+
+export default function ThingsToDo() {
+    const [activeTag, setActiveTag] = useState(0); // State to track active tag index
+
+    const cardsData = [
+        {
+            id: 1,
+            imageSrc: card1,
+            title: 'Lost World Full Day Epic',
+            description: 'From NZD $ 595.00',
+        },
+        {
+            id: 2,
+            imageSrc: card2,
+            title: 'Dart River Wilderness Jet Experience',
+            description: 'From NZD $ 299.00',
+        },
+        {
+            id: 3,
+            imageSrc: card3,
+            title: 'KJet + Milford Sound Day Tour',
+            description: 'From NZD $ 350.00',
+        },
+        {
+            id: 4,
+            imageSrc: card4,
+            title: 'Deep Canyon',
+            description: 'NZD $ 370.00 - NZD $ 2300.00',
+        },
+    ];
+
+    const tags = ['Adrenaline', 'History, Arts & Culture', 'Food & Drink experiences', 'Walking & hiking', 'Nature & wildlife', 'Film experiences'];
+
+    const handleTagClick = (index) => {
+        setActiveTag(index);
+    };
+
+    return (
+        <div className="setCenter bg-[#F8F8F8] mt-10 ">
+            <div className="w-[85%]">
+                <h1 className="boldHeadings text-3xl md:text-5xl lg:text-5xl">Find things to do</h1>
+
+                <p className="text-left mt-8 text-xs">Select type of activity:</p>
+
+                <div className="flex flex-row ">
+                    <div className="tags-container flex flex-row text-nowrap w-[60%] md:w-[75%]  lg:w-[65%] xl:w-[70%] space-x-3 mt-4 overflow-auto" >
+                        {tags.map((tag, index) => (
+                            <span
+                                key={index}
+                                onClick={() => handleTagClick(index)}
+                                className={`rounded-full px-3 py-1 text-xs cursor-pointer ${
+                                    index === activeTag ? 'bg-black text-white' : 'bg-[#D8D8D8] text-black'
+                                }`}
+                            >
+                                {tag}
+                            </span>
+                        ))}
+                    </div>
+                    <div className="flex flex-row gap-2 absolute right-14 lg:right-32 text-xs mt-4">
+                        <Image src={Category} className="h-5 w-auto" alt="category" />
+                        <p className="text-[#41913C] cursor-pointer hidden  lg:hidden xl:block">See all 3402 activities</p>
+                        <span className="text-[#D8D8D8]">|</span>
+                        <Image src={Map} className="h-5 w-auto ml-2" alt="map" />
+                        <p className="text-[#41913C] cursor-pointer hidden lg:hidden xl:block">Map View</p>
+                    </div>
+                </div>
+
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4  gap-y-6 my-10">
+                    {cardsData.map((card) => (
+                        <Card 
+                            key={card.id}
+                            imageSrc={card.imageSrc}
+                            title={card.title}
+                            description={card.description}
+                        />
+                    ))}
+                </div>
+
+                <p className="text-xs">
+                    308 Adrenaline activities
+                </p>
+
+                <button className="bg-[#41913C] px-4 p-2 my-8 rounded-md text-white text-lg font-semibold flex felx-row gap-1">
+                    See all <PiArrowRightThin className="mt-[6px]" />
+                </button>
+            </div>
+        </div>
+    );
+}
