@@ -77,9 +77,9 @@ export function GalleryComponent() {
   ];
 
   return (
-    <div className="bg-gradient-to-b from-[#3B5998] from-80% lg:from-75% to-white to-20% lg:to-25% h-[90vh] md:h-[70vh] lg:h-[60vh] xl:h-[120vh] 2xl:h-[80vh] text-white">
+    <div className=" bg-gradient-to-b from-[#3B5998] from-80% to-white to-20% h-fit overflow-y-scroll text-white">
       <div className="flex justify-center items-center">
-        <div className="w-[88%] h-screen mx-5 md:mx-14 2xl:w-[70%]">
+        <div className="w-[88%]  mx-5 md:mx-14 2xl:w-[70%]">
           <div className="text-xs mt-10 flex flex-row underline gap-2">
             <p className="cursor-pointer">North Island destination</p>|
             <p className="cursor-pointer">South Island destinations</p>|
@@ -88,7 +88,7 @@ export function GalleryComponent() {
           <div className="mt-24">
             <h1 className="boldHeadings sm:text-3xl lg:text-5xl">Must do Hong Kong experiences</h1>
           </div>
-          <div className="mt-10 ">
+          <div className="my-10 ">
             <ImageList className="" gap={10} cols={getCols()} variant="quilted">
               {itemData.map((item, index) => (
                 <ImageListItem
