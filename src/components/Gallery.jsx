@@ -33,21 +33,21 @@ export function GalleryComponent() {
 
   const itemData = [
     {
-      title: "Māori culture",
+      title: "Geopark Explore",
       img: Gallery1,
       height: 436,
       width: 660,
       colspan: isXs ? 1 : 2,
     },
     {
-      title: "Food and drink",
+      title: "Food & Drink ",
       img: Gallery2,
       height: 436,
       width: 310,
       colspan: 1,
     },
     {
-      title: "Walking and hiking",
+      title: "Walking & hiking",
       img: Gallery3,
       height: 436,
       width: 310,
@@ -61,14 +61,14 @@ export function GalleryComponent() {
       colspan: 1,
     },
     {
-      title: "Adventure and Adrenaline",
+      title: "Film Experiences ",
       img: Gallery5,
       height: 436,
       width: 310,
       colspan: 1,
     },
     {
-      title: "Home of Middle‑earth™",
+      title: "History, Art & Culture ",
       img: Gallery6,
       height: 436,
       width: 660,
@@ -77,16 +77,16 @@ export function GalleryComponent() {
   ];
 
   return (
-    <div className="bg-gradient-to-b from-[#171717] from-80% lg:from-75% to-white to-20% lg:to-25% h-[180vh] md:h-[120vh] lg:h-[110vh] xl:h-[75vh]  text-white">
+    <div className="bg-gradient-to-b from-[#3B5998] from-80% lg:from-75% to-white to-20% lg:to-25% h-[90vh] md:h-[70vh] lg:h-[60vh] xl:h-[120vh] 2xl:h-[80vh] text-white">
       <div className="flex justify-center items-center">
-        <div className="w-full h-screen mx-5 md:mx-14">
+        <div className="w-[88%] h-screen mx-5 md:mx-14 2xl:w-[70%]">
           <div className="text-xs mt-10 flex flex-row underline gap-2">
             <p className="cursor-pointer">North Island destination</p>|
             <p className="cursor-pointer">South Island destinations</p>|
             <p className="cursor-pointer">Explore all regions</p>
           </div>
           <div className="mt-24">
-            <h1 className="boldHeadings ">Must do Hong Kong experiences</h1>
+            <h1 className="boldHeadings sm:text-3xl lg:text-5xl">Must do Hong Kong experiences</h1>
           </div>
           <div className="mt-10 ">
             <ImageList className="" gap={10} cols={getCols()} variant="quilted">
@@ -96,9 +96,8 @@ export function GalleryComponent() {
                   cols={item.colspan}
                   rows={1}
                   gap={2}
-                  className={`relative ${
-                    (isXs || isSm || isMd) ? "h-auto" : "gallerySection"
-                  }`}
+                  className={`relative ${(isXs || isSm || isMd) ? "h-auto" : "gallerySection"
+                    }`}
                 >
                   {isXs || isSm || isMd ? (
                     <Image

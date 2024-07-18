@@ -39,7 +39,7 @@ export default function MustDo() {
             </div>
 
             <div className=" ">
-                <div className="h-[40vh] lg:h-auto overflow-y-auto xl:overflow-y-hidden  overflow-x-hidden">
+                <div className="h-[40vh] lg:h-auto tags-container overflow-y-auto xl:overflow-y-hidden  overflow-x-hidden">
                 <ImageList cols={6} variant="quilted" className="">
                     {imgData.map((item, index) => (
                         <ImageListItem

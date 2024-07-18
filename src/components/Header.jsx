@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import { FaBars, FaTimes } from "react-icons/fa";
-import Splitdylogo from "@/app/assets/Splitdylogo.png";
+import Splitdylogo from "@/app/assets/splitdy-logo.webp";
 
 export default function Header() {
   const [activeLink, setActiveLink] = useState("Places to visit");
@@ -27,10 +27,10 @@ export default function Header() {
   }, [isMenuOpen]);
 
   return (
-    <header className="bg-black text-white w-screen sticky top-0 z-50">
+    <header className="bg-[#3B5998] text-white w-screen sticky top-0 z-50 ">
       <div className="container mx-auto flex justify-between items-center p-4">
         <div className="flex items-center">
-          <Image src={Splitdylogo} alt="Splitdy logo" width={150} height={50} />
+          <Image src={Splitdylogo} alt="Splitdy logo" className="h-auto w-[200px] lg:w-[300px] md:w-[220px]" />
         </div>
         <nav className="hidden lg:flex cursor-pointer">
           <ul className="flex space-x-8 text-xs">
@@ -78,7 +78,7 @@ export default function Header() {
           <div className="hidden lg:flex">
             <select className="bg-transparent text-sm text-white p-2 rounded focus:outline-none focus:ring-2 focus:ring-white">
               <option className="text-black hover:text-white">United Kingdom</option>
-              <option className="text-black hover:text-white">Other Lang</option>
+              <option className="text-black hover:text-white">繁體</option>
             </select>
           </div>
           <div className="lg:hidden cursor-pointer" onClick={toggleMenu}>
@@ -90,7 +90,7 @@ export default function Header() {
 
       {isMenuOpen && (
         
-        <nav className="xl:hidden bg-black text-white p-4 h-[100vh]">
+        <nav className="xl:hidden bg-[#3B5998] text-white p-4 h-[100vh]">
           <ul className="flex flex-col space-y-4 text-xs">
             {[
               "Places to visit",
@@ -116,7 +116,7 @@ export default function Header() {
             <li className="flex items-center">
               <select className="bg-transparent w-auto text-xs ml-[-5px] text-white rounded focus:outline-none focus:ring-2 focus:ring-white">
                 <option className="text-black hover:text-white">United Kingdom</option>
-                <option className="text-black hover:text-white">Other Lang</option>
+                <option className="text-black hover:text-white">繁體</option>
               </select>
             </li>
           </ul>

@@ -49,7 +49,7 @@ export default function ThingsToDo() {
 
     return (
         <div className="setCenter bg-[#F8F8F8] mt-10 ">
-            <div className="w-[85%]">
+            <div className="w-[85%]  2xl:w-[70%]">
                 <h1 className="boldHeadings text-3xl md:text-5xl lg:text-5xl">Find things to do</h1>
 
                 <p className="text-left mt-8 text-xs">Select type of activity:</p>
@@ -68,7 +68,7 @@ export default function ThingsToDo() {
                             </span>
                         ))}
                     </div>
-                    <div className="flex flex-row gap-2 absolute right-14 lg:right-32 text-xs mt-4">
+                    <div className="flex flex-row gap-2 absolute right-14 lg:right-32 2xl:right-96 text-xs mt-4">
                         <Image src={Category} className="h-5 w-auto" alt="category" />
                         <p className="text-[#41913C] cursor-pointer hidden  lg:hidden xl:block">See all 3402 activities</p>
                         <span className="text-[#D8D8D8]">|</span>
@@ -88,8 +88,8 @@ export default function ThingsToDo() {
                     ))}
                 </div>
 
-                <p className="text-xs">
-                    308 Adrenaline activities
+                <p className="text-xs text-[#767676] font-medium">
+                308 Geopark Explore activities
                 </p>
 
                 <button className="bg-[#41913C] px-4 p-2 my-8 rounded-md text-white text-lg font-semibold flex felx-row gap-1">
