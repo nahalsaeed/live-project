@@ -50,7 +50,7 @@ export default function ThingsToDo() {
     return (
         <div className="setCenter bg-[#F8F8F8] mt-10 ">
             <div className="w-[85%]  2xl:w-[70%]">
-                <h1 className="boldHeadings text-3xl md:text-5xl lg:text-5xl">Find things to do</h1>
+                <h1 className="boldHeadings ">Find things to do</h1>
 
                 <p className="text-left mt-8 text-xs">Select type of activity:</p>
 
