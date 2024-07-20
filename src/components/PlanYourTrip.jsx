@@ -19,8 +19,8 @@ export default function PlanYourTrip() {
     return (
         <div>
             <DynamicText heading={heading} text={txt} />
-            <div className="setCenter">
-                <div className="w-[85%] mt-2">
+            <div className="setCenter mt-6">
+                <div className="w-[85%] 2xl:w-[70%] mt-2">
                     <div className="grid grid-cols-12 gap-3">
                         {images.map((image, index) => (
                             <div 

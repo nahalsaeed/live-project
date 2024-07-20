@@ -10,13 +10,14 @@ import Travelling from './Travelling'
 import SocialMedia from './SocialMedia'
 import Footer from './Footer'
 import FirstPlacesToGo from './FirstPlacesToGo'
+import HomeHeroSection from './HomeHeroSection'
 
 export default function MainComponent() {
     return (
         <>
             <Header />
             <FirstPlacesToGo/>
-            {/* <HeroSection /> */}
+            {/* <HomeHeroSection /> */}
             <GalleryComponent />
             {/* <MakePlan /> */}
             <ThingsToDo />

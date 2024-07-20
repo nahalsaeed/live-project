@@ -11,10 +11,8 @@ import card4 from "@/app/assets/card4.png";
 import { PiArrowRightThin } from "react-icons/pi";
 import "@/app/globals.css";
 import Tags from './Tags';
-
-export default function ThingsToDo() {
-    const [activeTag, setActiveTag] = useState(0); // State to track active tag index
-
+import SocialMedia from './SocialMedia';
+export default function ThingsToDoCards() {
     const cardsData = [
         {
             id: 1,
@@ -42,14 +40,11 @@ export default function ThingsToDo() {
         },
     ];
 
-    const tags = ['Adrenaline', 'History, Arts & Culture', 'Food & Drink experiences', 'Walking & hiking', 'Nature & wildlife', 'Film experiences'];
+    const tags = ['Adrenaline', 'Boat cruises','Cycling & Mountain biking','History, Arts & Culture', 'Food & Drink experiences', 'Leisure & Entertainment','Walking & hiking', 'Nature & wildlife', 'Film experiences'];
 
-    const handleTagClick = (index) => {
-        setActiveTag(index);
-    };
-
-    return (
-        <div className="setCenter bg-[#F8F8F8] mt-10 ">
+  return (
+    <div>
+       <div className="setCenter bg-[#F8F8F8] mt-10 ">
             <div className="w-[85%]  2xl:w-[70%]">
                 <h1 className="boldHeadings ">Find things to do</h1>
 
@@ -88,5 +83,9 @@ export default function ThingsToDo() {
                 </button>
             </div>
         </div>
-    );
+        <SocialMedia/>
+    </div>
+  )
 }
+
+    

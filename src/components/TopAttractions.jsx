@@ -5,8 +5,8 @@ import { PiArrowRightThin } from "react-icons/pi"
 
 export default function TopAttractions() {
     return (
-        <div className="setCenter">
-            <div className="w-[85%]">
+        <div className="setCenter ">
+            <div className="w-[85%] 2xl:w-[70%]">
                 <div >
                     <h1 className="boldHeadings">
                         Top attractions and activities
