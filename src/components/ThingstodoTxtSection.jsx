@@ -22,6 +22,7 @@
 import { Akronim } from "next/font/google";
 import DynamicText from "./DynamicText";
 import { usePathname } from "next/navigation"; // Import usePathname hook
+import { IoIosArrowForward } from "react-icons/io";
 const akronim = Akronim({
     subsets: ['latin'],
     weight: '400',
@@ -38,8 +39,8 @@ export default function ThingstodoTxtSection() {
         <div>
             <div className="h-[280px] text-white bg-black ">
                 <div className="mx-5 lg:ml-28 2xl:ml-56 flex justify-between flex-col ">
-                    <p className="text-xs mt-2">Home Things To do</p>
-                    <div className=" mt-8">
+                <p className="text-xs mt-2 gap-1 flex flex-row">Home <IoIosArrowForward  className="mt-[3px]"/>
+                Things To do</p>                    <div className=" mt-8">
                         <div className={`${akronim.className} mt-5 w-[80%] lg:w-[45%] text-xl lg:text-3xl 2xl:text-5xl`}>
                             <p>With two unique islands, 14 national parks, and
                                 dozens of diverse cities, there are plenty of
