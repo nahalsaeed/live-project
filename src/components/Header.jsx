@@ -1,17 +1,19 @@
-
 "use client";
 import { useState, useEffect } from "react";
 import Image from "next/image";
+import { useRouter, usePathname } from "next/navigation"; // Import useRouter and usePathname hooks
 import { FaBars, FaTimes } from "react-icons/fa";
 import Splitdylogo from "@/app/assets/splitdy-logo.webp";
+import Link from "next/link";
 
 export default function Header() {
-  const [activeLink, setActiveLink] = useState("Places to visit");
+  const router = useRouter(); // Get the router object
+  const pathname = usePathname(); // Get the current path
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const handleLinkClick = (link) => {
-    setActiveLink(link);
     setIsMenuOpen(false); // Close the menu when a link is clicked
+    router.push(link); // Navigate to the respective page
   };
 
   const toggleMenu = () => {
@@ -27,7 +29,7 @@ export default function Header() {
   }, [isMenuOpen]);
 
   return (
-    <header className="bg-[#3B5998] text-white w-screen sticky top-0 z-50 ">
+    <header className="bg-[#3B5998] text-white w-screen sticky top-0 z-50">
       <div className="container mx-auto flex justify-between items-center p-4">
         <div className="flex items-center">
           <Image src={Splitdylogo} alt="Splitdy logo" className="h-auto w-[200px] lg:w-[300px] md:w-[220px]" />
@@ -35,30 +37,28 @@ export default function Header() {
         <nav className="hidden lg:flex cursor-pointer">
           <ul className="flex space-x-8 text-xs">
             {[
-              "Places to visit",
-              "Things to do",
-              "Find accommodation",
-              "Plan your trip",
+              { name: "Places to visit", path: "/places-to-visit" },
+              { name: "Things to do", path: "/things-to-do" },
+              { name: "Find accommodation", path: "/destinations" },
+              { name: "Plan your trip", path: "/" },
             ].map((link) => (
-              <li key={link}>
-                <a
-                  href="#"
-                  className={`hover:text-gray-400 ${
-                    activeLink === link ? "underline" : ""
-                  }`}
-                  onClick={(e) => {
-                    e.preventDefault();
-                    handleLinkClick(link);
-                  }}
-                >
-                  {link}
-                </a>
+              <li key={link.path}>
+                <Link href={link.path}>
+                  <span
+                    className={`hover:text-gray-400 ${
+                      pathname === link.path ? "underline" : ""
+                    }`}
+                    onClick={() => handleLinkClick(link.path)}
+                  >
+                    {link.name}
+                  </span>
+                </Link>
               </li>
             ))}
           </ul>
         </nav>
         <div className="flex items-center space-x-2 mr-[20px]">
-          <div className="block ">
+          <div className="block">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="20px"
@@ -89,28 +89,25 @@ export default function Header() {
       </div>
 
       {isMenuOpen && (
-        
         <nav className="xl:hidden bg-[#3B5998] text-white p-4 h-[100vh]">
           <ul className="flex flex-col space-y-4 text-xs">
             {[
-              "Places to visit",
-              "Things to do",
-              "Find accommodation",
-              "Plan your trip",
+              { name: "Places to visit", path: "/places-to-visit" },
+              { name: "Things to do", path: "/things-to-do" },
+              { name: "Find accommodation", path: "/find-accommodation" },
+              { name: "Plan your trip", path: "/plan-your-trip" },
             ].map((link) => (
-              <li key={link}>
-                <a
-                  href="#"
-                  className={`hover:text-gray-400 ${
-                    activeLink === link ? "underline" : ""
-                  }`}
-                  onClick={(e) => {
-                    e.preventDefault();
-                    handleLinkClick(link);
-                  }}
-                >
-                  {link}
-                </a>
+              <li key={link.path}>
+                <Link href={link.path}>
+                  <span
+                    className={`hover:text-gray-400 ${
+                      pathname === link.path ? "underline" : ""
+                    }`}
+                    onClick={() => handleLinkClick(link.path)}
+                  >
+                    {link.name}
+                  </span>
+                </Link>
               </li>
             ))}
             <li className="flex items-center">

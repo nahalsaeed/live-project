@@ -10,6 +10,7 @@ import Travelling from './Travelling'
 import SocialMedia from './SocialMedia'
 import Footer from './Footer'
 import FirstPlacesToGo from './FirstPlacesToGo'
+
 import HomeHeroSection from './HomeHeroSection'
 
 export default function MainComponent() {
@@ -25,6 +26,7 @@ export default function MainComponent() {
             {/* <TravelAdvice /> */}
             <MustDo />
             {/* <Travelling /> */}
+
             <SocialMedia />
             <Footer />
         </>

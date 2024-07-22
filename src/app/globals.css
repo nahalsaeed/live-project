@@ -48,3 +48,15 @@
   -ms-overflow-style: none;  
   scrollbar-width: none;  
 }
+
+
+.footer-logo{
+  gap:1;
+}
+
+@media screen  and (min-width:1025px){
+  
+  .footer-logo{
+   gap: 0 !important;
+  }
+}

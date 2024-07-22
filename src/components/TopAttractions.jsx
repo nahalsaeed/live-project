@@ -15,10 +15,24 @@ export default function TopAttractions() {
                 </div>
                 <div className="grid grid-cols-12 gap-5 my-6">
                     <div className="col-span-12 lg:col-span-6">
+                        <div className="relative">
                         <Image src={img1} alt="img" />
+                        <div className="absolute bottom-0 left-0 flex flex-row gap-1 text-white font-bold text-sm p-5">
+                        Ultimate New Zealand bucket list 
+                    <PiArrowRightThin className="mt-[4px]" />
                     </div>
+                    </div>
+                    </div>
+                    
                     <div className="col-span-12 lg:col-span-6">
+                    <div className="relative">
+
                         <Image src={img2} alt="img" />
+                        <div className="absolute bottom-0 left-0 flex flex-row gap-1 text-white font-bold text-sm p-5">
+                        Top things to see and do in New Zealand 
+                    <PiArrowRightThin className="mt-[4px]" />
+                    </div>
+                        </div>
                     </div>
                 </div>
             </div>

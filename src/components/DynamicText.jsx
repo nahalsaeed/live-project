@@ -7,7 +7,7 @@ export default function DynamicText({heading,text}) {
                 <h1 className="boldHeadings ">
                     {heading}
                 </h1>
-                <p className="text-xs xl:text-lg">{text}</p>
+                <p className="text-xs lg:text-sm 2xl:text-lg">{text}</p>
 
             </div>
         </div>
