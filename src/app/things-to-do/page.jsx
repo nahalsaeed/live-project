@@ -7,7 +7,7 @@ import ThingsToDoCards from "@/components/ThingsToDoCards";
 import ThingsToDoHeroSection from "@/components/ThingsToDoHeroSection";
 import ThingstodoTxtSection from "@/components/ThingstodoTxtSection";
 import TopAttractions from "@/components/TopAttractions";
-import herosectionImg from "@/app/assets/Herothingstodo.webp"; // Import the specific image
+import herosectionImg from "@/app/assets/Herothingstodo.webp";
 import ListThingsTodo from "@/components/listThingsTodo";
 
 export default function Page() {

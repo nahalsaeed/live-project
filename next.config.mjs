@@ -6,7 +6,7 @@ const nextConfig = {
           // Basic redirect
           {
             source: '/',
-            destination: '/main',
+            destination: '/places-to-visit',
             permanent: false,
           },
           
@@ -15,9 +15,9 @@ const nextConfig = {
       images: {
         remotePatterns: [
           {  
-            // protocol: "http",
+          
              hostname: "backend.bntr.ai",
-            // hostname: "35.182.84.60",
+  
           }
         ],
       
