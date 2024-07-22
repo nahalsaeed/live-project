@@ -10,6 +10,7 @@ import ThingsToDoHeroSection from "@/components/ThingsToDoHeroSection"; // Impor
 import destinationImg from "@/app/assets/destination.png"; // Import the specific image for destination
 import ThingstodoTxtSection from "@/components/ThingstodoTxtSection";
 import ThingsToSee from "@/components/ThingsToSee";
+import TopPlacesToVisit from "@/components/TopPlacesToVisit";
 
 export default function Page() {
     return (
@@ -17,7 +18,9 @@ export default function Page() {
             <Header />
             <ThingsToDoHeroSection image={destinationImg} /> 
             <ThingstodoTxtSection />
+            <TopPlacesToVisit/>
             <ThingsToSee/>
+
             <Map />
             <CardSection1 />
             <CardSection4 />

@@ -27,7 +27,7 @@ const Map = () => {
     if (window.google) {
       setMapOptions({
         styles: mapStyles,
-        mapTypeControl: false, 
+        mapTypeControl: false, // Disable map type control
         disableDefaultUI: true,
         zoomControl: true,
         streetViewControl: true,

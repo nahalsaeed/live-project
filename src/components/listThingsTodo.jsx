@@ -109,23 +109,23 @@ export default function ListThingsTodo() {
     return (
         <div className="setCenter">
             <div className="w-[85%] 2xl:w-[70%]">
-
-                <div className="px-4 py-8 text-xs ">
-                    <h1 className="boldHeadings ">Things to do in New Zealand</h1>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 ">
-                        {categories.map((category, index) => (
-                            <div key={index}>
-                                <h2 className="text-sm font-semibold mb-4">{category.title}</h2>
-                                <ul className="list-none space-y-2">
-                                    {category.activities.map((activity, i) => (
-                                        <li key={i} className="text-green-600">{activity}</li>
-                                    ))}
-                                </ul>
-                            </div>
-                        ))}
+        
+        <div className="px-4 py-8 text-xs ">
+            <h1 className="boldHeadings ">Things to do in New Zealand</h1>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 ">
+                {categories.map((category, index) => (
+                    <div key={index}>
+                        <h2 className="text-sm font-semibold mb-4">{category.title}</h2>
+                        <ul className="list-none space-y-2">
+                            {category.activities.map((activity, i) => (
+                                <li key={i} className="text-green-600">{activity}</li>
+                            ))}
+                        </ul>
                     </div>
-                </div>
+                ))}
             </div>
+        </div>
+        </div>
         </div>
 
     );
