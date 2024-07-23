@@ -1,15 +1,14 @@
-import Culture from "@/components/Culture";
+import Culture from "@/components/thingstodopage/Culture";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
-// import ListThingsTodo from "@/components/ListThingsTodo";
-import OutdoorAdventure from "@/components/OutdoorAdventure";
-import PlanYourTrip from "@/components/PlanYourTrip";
-import ThingsToDoCards from "@/components/ThingsToDoCards";
-import ThingsToDoHeroSection from "@/components/ThingsToDoHeroSection";
-import ThingstodoTxtSection from "@/components/ThingstodoTxtSection";
-import TopAttractions from "@/components/TopAttractions";
-import herosectionImg from "@/app/assets/Herothingstodo.webp"; // Import the specific image
-import ListThingsTodo from "@/components/listThingsTodo";
+import ListThingsTodo from "@/components/thingstodopage/ListThingsTodo";
+import OutdoorAdventure from "@/components/thingstodopage/OutdoorAdventure";
+import PlanYourTrip from "@/components/thingstodopage/PlanYourTrip";
+import ThingsToDoCards from "@/components/thingstodopage/ThingsToDoCards";
+import ThingsToDoHeroSection from "@/components/thingstodopage/ThingsToDoHeroSection";
+import ThingstodoTxtSection from "@/components/thingstodopage/ThingstodoTxtSection";
+import TopAttractions from "@/components/thingstodopage/TopAttractions";
+import herosectionImg from "@/assets/Herothingstodo.webp"; // Import the specific image
 
 export default function Page() {
     return (

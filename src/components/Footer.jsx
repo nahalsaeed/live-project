@@ -1,7 +1,7 @@
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import "@/app/globals.css";
-import footerlogo from "@/app/assets/footer-logo.webp"
-import logo from "@/app/assets/logo.svg"
+import footerlogo from "@/assets/footer-logo.webp"
+import logo from "@/assets/logo.svg"
 import Image from 'next/image';
 
 export default function Footer() {

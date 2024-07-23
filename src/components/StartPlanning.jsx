@@ -1,11 +1,11 @@
 "use client";
 import { ImageList, ImageListItem } from "@material-ui/core";
 import Image from "next/image";
-import Gallery7 from "@/app/assets/Gallery7.png";
-import Gallery8 from "@/app/assets/Gallery8.png";
-import Gallery9 from "@/app/assets/Gallery9.png";
-import Gallery10 from "@/app/assets/Gallery10.png";
-import Gallery11 from "@/app/assets/Gallery11.png";
+import Gallery7 from "@/assets/Gallery7.png";
+import Gallery8 from "@/assets/Gallery8.png";
+import Gallery9 from "@/assets/Gallery9.png";
+import Gallery10 from "@/assets/Gallery10.png";
+import Gallery11 from "@/assets/Gallery11.png";
 import "@/app/globals.css";
 import { PiArrowRightThin } from "react-icons/pi";
 
@@ -37,14 +37,14 @@ export default function StartPlanning() {
               >
                 <div className="relative">
                   <Image
-                  className='cursor-pointer'
+                    className='cursor-pointer'
                     src={item.img}
                     alt={item.title}
                     style={{ height: item.height, width: item.width }}
                   />
                   <div className="absolute bottom-0 left-0 flex flex-row gap-1 text-white font-bold text-sm p-5">
                     {item.title}
-                    <PiArrowRightThin className='mt-[4px]'/>
+                    <PiArrowRightThin className='mt-[4px]' />
                   </div>
                 </div>
               </ImageListItem>

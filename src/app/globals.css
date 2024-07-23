@@ -40,6 +40,11 @@
   width: max-content !important;
 }
 
+.gallery{
+  height: 318px !important;
+  width: 120px !important;
+}
+
 .tags-container::-webkit-scrollbar {
   display: none; 
 }

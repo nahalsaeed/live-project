@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import { useRouter, usePathname } from "next/navigation"; // Import useRouter and usePathname hooks
 import { FaBars, FaTimes } from "react-icons/fa";
-import Splitdylogo from "@/app/assets/splitdy-logo.webp";
+import Splitdylogo from "@/assets/splitdy-logo.webp";
 import Link from "next/link";
 
 export default function Header() {
@@ -45,9 +45,8 @@ export default function Header() {
               <li key={link.path}>
                 <Link href={link.path}>
                   <span
-                    className={`hover:text-gray-400 ${
-                      pathname === link.path ? "underline" : ""
-                    }`}
+                    className={`hover:text-gray-400 ${pathname === link.path ? "underline" : ""
+                      }`}
                     onClick={() => handleLinkClick(link.path)}
                   >
                     {link.name}
@@ -82,8 +81,8 @@ export default function Header() {
             </select>
           </div>
           <div className="lg:hidden cursor-pointer" onClick={toggleMenu}>
-            {isMenuOpen ? 
-            <FaTimes size={24} /> : <FaBars size={24} />}
+            {isMenuOpen ?
+              <FaTimes size={24} /> : <FaBars size={24} />}
           </div>
         </div>
       </div>
@@ -100,9 +99,8 @@ export default function Header() {
               <li key={link.path}>
                 <Link href={link.path}>
                   <span
-                    className={`hover:text-gray-400 ${
-                      pathname === link.path ? "underline" : ""
-                    }`}
+                    className={`hover:text-gray-400 ${pathname === link.path ? "underline" : ""
+                      }`}
                     onClick={() => handleLinkClick(link.path)}
                   >
                     {link.name}

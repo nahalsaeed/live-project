@@ -1,6 +1,6 @@
 import "@/app/globals.css";
 
-export default function DynamicText({heading,text}) {
+export default function DynamicText({ heading, text }) {
     return (
         <div className="setCenter">
             <div className="w-[70%] lg:w-[40%]">

@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { MdClose } from 'react-icons/md';
-import Figure from "@/app/assets/Figure.png";
+import Figure from "@/assets/Figure.png";
 
 const CardMap = ({ onClose }) => {
   return (

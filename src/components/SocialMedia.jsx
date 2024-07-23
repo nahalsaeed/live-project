@@ -1,6 +1,6 @@
-import twitter from "../app/assets/twitter.png";
-import facebook from "../app/assets/facebook.png";
-import mail from "../app/assets/mail.png";
+import twitter from "../assets/twitter.png";
+import facebook from "../assets/facebook.png";
+import mail from "../assets/mail.png";
 import Image from "next/image";
 
 export default function SocialMedia() {

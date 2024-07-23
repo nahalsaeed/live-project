@@ -1,4 +1,4 @@
-import MainComponent from "@/components/mainComponent"
+import MainComponent from "@/components/landingpage/mainComponent"
 
 export default function Main() {
     return (
