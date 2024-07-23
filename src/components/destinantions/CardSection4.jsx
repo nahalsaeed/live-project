@@ -2,7 +2,7 @@
 "use client"
 
 import Image from "next/image";
-import Category from "@/ssets/Category.png";
+import Category from "@/assets/Category.png";
 import Map from "@/assets/Map.png";
 import Card from "../Card";
 import card17 from "@/assets/card17.webp";
