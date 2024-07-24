@@ -6,7 +6,7 @@ const actor = Actor({
     subsets: ['latin'],
     weight: '400',
 });
-export default function ThingsToDoHeroSection({ title, subtitle, image }) {
+export default function ThingsToDoHeroSection({ title, subtitle, image, description }) {
     return (
         <div>
             <Image src={image} alt="hero-section-img" className="relative w-screen" />
@@ -20,6 +20,15 @@ export default function ThingsToDoHeroSection({ title, subtitle, image }) {
                             </div>
                         </div>
                     </div>
+                ) : description ? (
+
+                    <div className="text-white mt-56 ml-24 w-[40%] items-start relative">
+                        <div className={actor.className}>
+                            <div className="font-thin text-5xl">
+                                <h1>North Island</h1>
+                            </div>
+                        </div>
+                    </div>
                 ) : (
                     // Content specific to the /destinations page
                     <div className="text-white mt-56 ml-24 w-[40%] items-start relative">
@@ -29,6 +38,7 @@ export default function ThingsToDoHeroSection({ title, subtitle, image }) {
                             </div>
                         </div>
                     </div>
+
                 )}
                 <div className="flex justify-center items-center h-auto">
                     <button className="bg-black rounded-full border-8 p-7"></button>

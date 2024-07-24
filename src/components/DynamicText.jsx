@@ -3,7 +3,7 @@ import "@/app/globals.css";
 export default function DynamicText({ heading, text }) {
     return (
         <div className="setCenter">
-            <div className="w-[70%] lg:w-[40%]">
+            <div className="w-[70%] lg:w-[40%] xl:w-[37%] 2xl:w-[27%]">
                 <h1 className="boldHeadings ">
                     {heading}
                 </h1>

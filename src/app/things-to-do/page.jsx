@@ -15,7 +15,7 @@ export default function Page() {
         <div className="flex flex-col overflow-hidden">
             <Header />
             <ThingsToDoHeroSection title="Things to do in" subtitle="NEW ZEALAND" image={herosectionImg} />
-            <ThingstodoTxtSection />
+            <ThingstodoTxtSection para={"With two unique islands, 14 national parks, and dozens of diverse cities, there are plenty of New Zealand attractions and activities to choose from."}/>
             <TopAttractions />
             <OutdoorAdventure />
             <Culture />

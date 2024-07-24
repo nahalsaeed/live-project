@@ -17,19 +17,6 @@ import { useTheme } from "@material-ui/core/styles";
 import "@/app/globals.css";
 
 export default function MustDo() {
-    const itemData = [
-        { img: gal1, height: 318, width: 200, colspan: 1 },
-        { img: gal2, height: 318, width: 200, colspan: 1 },
-        { img: gal3, height: 318, width: 250, colspan: 1 },
-        { img: gal4, height: 318, width: 410, colspan: 2 },
-        { img: gal5, height: 318, width: 220, colspan: 1 },
-        { img: gal6, height: 318, width: 200, colspan: 1 },
-        { img: gal7, height: 318, width: 180, colspan: 1 },
-        { img: gal8, height: 318, width: 250, colspan: 1 },
-        { img: gal9, height: 318, width: 400, colspan: 2 },
-        { img: gal10, height: 318, width: 250, colspan: 1 },
-    ];
-
     const theme = useTheme();
     const isXs = useMediaQuery(theme.breakpoints.down("xs"));
     const isSm = useMediaQuery(theme.breakpoints.between("xs", "sm"));
@@ -37,6 +24,20 @@ export default function MustDo() {
     const isLg = useMediaQuery(theme.breakpoints.between("md", "lg"));
     const isXl = useMediaQuery(theme.breakpoints.up("lg"));
 
+    const itemData = [
+        { img: gal1, height: 318, width: 200, colspan: 1 },
+        { img: gal2, height: 318, width: 200, colspan: 1 },
+        { img: gal3, height: 318, width: 250, colspan: 1 },
+        { img: gal4, height: 318, width: 410, colspan: isXs?1: 2 },
+        { img: gal5, height: 318, width: 220, colspan: 1 },
+        { img: gal6, height: 318, width: 200, colspan: 1 },
+        { img: gal7, height: 318, width: 180, colspan: 1 },
+        { img: gal8, height: 318, width: 250, colspan: 1 },
+        { img: gal9, height: 318, width: 400, colspan: isXs?1: 2 },
+        { img: gal10, height: 318, width: 250, colspan: 1 },
+    ];
+
+   
     const getCols = () => {
         if (isXs) return 1;
         if (isSm) return 2;
@@ -55,18 +56,18 @@ export default function MustDo() {
             </div>
 
             <div className=" ">
-                <div className="h-[40vh] lg:h-auto tags-container overflow-y-auto xl:overflow-y-hidden  overflow-x-hidden">
+                <div className="h-[40vh] lg:h-auto w-full tags-container overflow-y-auto xl:overflow-y-hidden  overflow-x-hidden">
                     <div className="my-10 ">
-                        <ImageList className="" cols={getCols()} variant="quilted" gap={8}>
+                        <ImageList className="" cols={getCols()} variant="quilted" >
                             {itemData.map((item, index) => (
                                 <ImageListItem
                                     key={index}
                                     cols={item.colspan}
                                     rows={1}
-                                    className={`relative ${(isXs || isSm || isMd) ? "h-auto" : "gallerySection"
+                                    className={`relative gallery-w ${(isXs || isSm || isMd) ? "h-auto" : "gallery"
                                         }`}
                                 >
-                                    {/* {isXs || isSm || isMd ? ( */}
+                                    {isXs || isSm || isMd ? (
                                     <Image
                                         className="cursor-pointer"
                                         src={item.img}
@@ -74,16 +75,16 @@ export default function MustDo() {
                                         layout="fill"
                                         alt="img"
                                     />
-                                    {/* ) : ( */}
+                                   ) : ( 
                                     <>
                                         <Image
-                                            className="cursor-pointer"
+                                            className="cursor-pointer "
                                             src={item.img}
-                                            height={item.height}
+                                            //height={item.height}
                                             alt="img"
                                         />
                                     </>
-                                    {/* )} */}
+                                    )}
                                 </ImageListItem>
                             ))}
                         </ImageList>

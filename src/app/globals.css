@@ -42,7 +42,11 @@
 
 .gallery{
   height: 318px !important;
-  width: 120px !important;
+  width: max-content !important;
+}
+
+.gallery-w{
+  width: auto !important;
 }
 
 .tags-container::-webkit-scrollbar {

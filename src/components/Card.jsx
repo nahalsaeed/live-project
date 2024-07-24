@@ -13,7 +13,7 @@ export default function Card({ imageSrc, title, description }) {
         <div className="max-w-sm rounded-xl overflow-hidden   w-[90%] h-full shadow-lg relative mx-auto">
             <Image className="w-full" src={imageSrc} alt={title} />
 
-            <div className="px-6 py-4 min-h-[220px] ">
+            <div className="px-6 py-4 min-h-[220px] bg-white">
                 <div className="font-bold text-lg mb-2">{title}</div>
                 <p className="text-gray-700 text-sm">{description}</p>
             </div>

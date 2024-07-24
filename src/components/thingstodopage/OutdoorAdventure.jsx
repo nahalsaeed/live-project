@@ -45,6 +45,8 @@ export default function OutdoorAdventure() {
                 className={`relative ${index === 0 ? 'col-span-12 lg:col-span-6' : 'col-span-6 lg:col-span-3'}`}
               >
                 <Image src={image.src} alt={image.alt} />
+                <div className=" absolute inset-0 bg-gradient-to-t from-[#0000005b] from-20% to-[#fff0] to-80% z-1"> </div>
+
                 <div className="absolute bottom-0 left-0 flex flex-row gap-1 text-white font-bold text-sm p-5 ">
                   {image.title}
                   <PiArrowRightThin className="mt-[4px]" />

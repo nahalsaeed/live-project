@@ -23,6 +23,8 @@ export default function YouMayAlsoBeInterestedIn() {
                             className="col-span-12 lg:col-span-4 relative"
                         >
                             <Image src={image.src} alt={image.alt} className="w-full h-auto" />
+                            <div className=" absolute inset-0 bg-gradient-to-t from-[#0000005b] from-20% to-[#fff0] to-80% z-1"> </div>
+
                             <div className="absolute bottom-0 left-0 right-0  text-white font-bold text-sm p-5 flex gap-2 items-center">
                                 {image.title}
                                 <PiArrowRightThin className="mt-1" />

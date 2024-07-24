@@ -30,10 +30,11 @@ const akronim = Akronim({
 
 const text = "Explore golden coastlines fringed with native pohutakawa trees, follow walking trails to waterfalls hidden in beech forests, or cycle through gently rolling vineyards. If you're after New Zealand's famous adventure activities and extreme sports, you can choose from bungy jumping, jet boating, skydiving or zip lining. Or relax and take it easy at beautiful hot pools, cultural attractions and art galleries.";
 
-export default function ThingstodoTxtSection() {
+export default function ThingstodoTxtSection({para}) {
     const pathname = usePathname(); 
 
-    const isDestinationPage = pathname === "/destinations";
+    const isThingsToDoPage = pathname === "/thingstodo";
+
 
     return (
         <div>
@@ -42,17 +43,14 @@ export default function ThingstodoTxtSection() {
                     <p className="text-xs mt-2 gap-1 flex flex-row">Home <IoIosArrowForward  className="mt-[3px]"/>
                     Things To do</p>
                     <div className=" mt-8">
+                        
                         <div className={`${akronim.className} mt-5 w-[80%] lg:w-[45%] text-xl lg:text-3xl 2xl:text-5xl`}>
-                            <p>With two unique islands, 14 national parks, and
-                                dozens of diverse cities, there are plenty of
-                                New Zealand attractions and activities to choose
-                                from.
-                            </p>
+                            <p>{para}</p>
                         </div>
                     </div>
                 </div>
             </div>
-            {!isDestinationPage && (
+            {isThingsToDoPage && (
                 <>
                     <DynamicText text={text} />
                     <div className="flex justify-center items-center h-10">

@@ -40,7 +40,7 @@ export default function Header() {
               { name: "Places to visit", path: "/places-to-visit" },
               { name: "Things to do", path: "/things-to-do" },
               { name: "Find accommodation", path: "/destinations" },
-              { name: "Plan your trip", path: "/" },
+              { name: "Plan your trip", path: "/plan-your-trip" },
             ].map((link) => (
               <li key={link.path}>
                 <Link href={link.path}>

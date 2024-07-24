@@ -28,6 +28,8 @@ export default function UpperNorthIsland() {
                             <div className="relative">
 
                                 <Image src={img2} alt="img" />
+                                <div className=" absolute inset-0 bg-gradient-to-t from-[#0000005b] from-20% to-[#fff0] to-80% z-1"> </div>
+
                                 <div className="absolute bottom-0 left-0 flex flex-row gap-1 text-white font-bold text-sm p-5">
                                     Northland & Bay of Islands
                                     <PiArrowRightThin className="mt-[4px]" />
