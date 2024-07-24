@@ -67,7 +67,7 @@ const Pricing = () => {
             </div>
             <div className='my-20'>
                 <h1 className="text-2xl font-semibold">About</h1>
-                <p className='my-8'>Depart Halfmoon Bay, Stewart Island for a cruise to Little Glory Cove. Learn about Stewart Island's
+                <p className='my-8'>Depart Halfmoon Bay, Stewart Island for a cruise to Little Glory Cove. Learn about Stewart Islands
                     rich history and disembark for a guided walk across the peninsula. As dusk sets in, and with your
                     guide, venture by torchlight through the native forest until the track emerges on to Ocean Beach.
                     This wide sandy beach is where the Southern brown kiwi (Rakiura Tokoeka) are found - often
