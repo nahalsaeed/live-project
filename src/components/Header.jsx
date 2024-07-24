@@ -41,6 +41,7 @@ export default function Header() {
               { name: "Things to do", path: "/things-to-do" },
               { name: "Find accommodation", path: "/destinations" },
               { name: "Plan your trip", path: "/plan-your-trip" },
+              { name: "Wild Kiwi", path: "/wild" },
             ].map((link) => (
               <li key={link.path}>
                 <Link href={link.path}>

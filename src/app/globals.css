@@ -69,3 +69,47 @@
    gap: 0 !important;
   }
 }
+
+
+
+/* Custom styles */
+.carousel-container {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.carousel-item {
+  position: relative;
+  flex: 0 0 100%;
+  width: 100%;
+  height: auto;
+}
+
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-button.left {
+  left: 16px;
+}
+
+.carousel-button.right {
+  right: 16px;
+}
+
+.carousel-button svg {
+  width: 16px;
+  height: 16px;
+  color: white;
+}
