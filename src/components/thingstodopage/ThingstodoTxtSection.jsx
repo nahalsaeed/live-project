@@ -33,7 +33,7 @@ const text = "Explore golden coastlines fringed with native pohutakawa trees, fo
 export default function ThingstodoTxtSection({para}) {
     const pathname = usePathname(); 
 
-    const isThingsToDoPage = pathname === "/thingstodo";
+    const isThingsToDoPage = pathname === "/things-to-do";
 
 
     return (
