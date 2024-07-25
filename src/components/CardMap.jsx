@@ -1,11 +1,17 @@
+"use client"
 import React from 'react';
 import Image from 'next/image';
 import { MdClose } from 'react-icons/md';
 import Figure from "@/assets/Figure.png";
+import { usePathname } from "next/navigation"; // Import usePathname hook
 
 const CardMap = ({ onClose }) => {
+  const pathname = usePathname(); 
+
+  const isDestination = pathname === "/destinations";
   return (
-    <div className="absolute top-[10px] left-[10px] bg-white shadow-lg   w-[350px] z-10">
+    <>
+    { isDestination ? (<div className="absolute top-[10px] left-[10px] bg-white shadow-lg   w-[350px] z-10">
       <div className="relative">
         <Image
           src={Figure}
@@ -27,7 +33,12 @@ const CardMap = ({ onClose }) => {
           Read more
         </button>
       </div>
-    </div>
+    </div>) : (
+      <div>
+      </div>
+    )
+  }
+    </>
   );
 };
 
