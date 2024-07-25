@@ -11,90 +11,94 @@ import gal7 from "@/assets/gal7.png";
 import gal8 from "@/assets/gal8.png";
 import gal9 from "@/assets/gal9.png";
 import gal10 from "@/assets/gal10.png";
-import insta from "@/assets/intsa.png"
+import gal11 from "@/assets/gal9.png";
+import insta from "@/assets/intsa.png";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
 import { useTheme } from "@material-ui/core/styles";
 import "@/app/globals.css";
 
 export default function MustDo() {
-    const theme = useTheme();
-    const isXs = useMediaQuery(theme.breakpoints.down("xs"));
-    const isSm = useMediaQuery(theme.breakpoints.between("xs", "sm"));
-    const isMd = useMediaQuery(theme.breakpoints.between("sm", "md"));
-    const isLg = useMediaQuery(theme.breakpoints.between("md", "lg"));
-    const isXl = useMediaQuery(theme.breakpoints.up("lg"));
+  const theme = useTheme();
+  const isXs = useMediaQuery(theme.breakpoints.down("xs"));
+  const isSm = useMediaQuery(theme.breakpoints.between("xs", "sm"));
+  const isMd = useMediaQuery(theme.breakpoints.between("sm", "md"));
+  const isLg = useMediaQuery(theme.breakpoints.between("md", "lg"));
+  const isXl = useMediaQuery(theme.breakpoints.up("lg"));
 
-    const itemData = [
-        { img: gal1, height: 318, width: 200, colspan: 1 },
-        { img: gal2, height: 318, width: 200, colspan: 1 },
-        { img: gal3, height: 318, width: 250, colspan: 1 },
-        { img: gal4, height: 318, width: 410, colspan: isXs?1: 2 },
-        { img: gal5, height: 318, width: 220, colspan: 1 },
-        { img: gal6, height: 318, width: 200, colspan: 1 },
-        { img: gal7, height: 318, width: 180, colspan: 1 },
-        { img: gal8, height: 318, width: 250, colspan: 1 },
-        { img: gal9, height: 318, width: 400, colspan: isXs?1: 2 },
-        { img: gal10, height: 318, width: 250, colspan: 1 },
-    ];
+  const itemData = [
+    { img: gal1, height: 418, width: 214, colspan: 1 },
+    { img: gal2, height: 418, width: 214, colspan: 1 },
+    { img: gal3, height: 418, width: 214, colspan: 1 },
+    { img: gal4, height: 418, width: 422, colspan: 1 },
+    { img: gal5, height: 418, width: 214, colspan: 1 },
+    { img: gal6, height: 418, width: 214, colspan: 1 },
 
-   
-    const getCols = () => {
-        if (isXs) return 1;
-        if (isSm) return 2;
-        if (isMd) return 3;
-        if (isLg) return 4;
-        if (isXl) return 4;
-        return 4;
-    };
+    { img: gal7, height: 418, width: 217, colspan: 1 },
+    { img: gal8, height: 418, width: 217, colspan: 1 },
+    { img: gal9, height: 418, width: 422, colspan: 1 },
+    { img: gal10, height: 418, width: 217, colspan: 1 },
+    { img: gal11, height: 418, width: 422, colspan: 1 },
+  ];
 
-    return (
-        <div className="my-8">
-            <div className="setCenter">
-                <div className="w-[85%]">
-                    <h1 className="boldHeadings">#HongKongMustDo</h1>
-                </div>
-            </div>
+  const getCols = () => {
+    if (isXs) return 1;
+    if (isSm) return 2;
+    if (isMd) return 3;
+    if (isLg) return 6;
+    if (isXl) return 6;
+    return 6;
+  };
 
-            <div className=" ">
-                <div className="h-[40vh] lg:h-auto w-full tags-container overflow-y-auto xl:overflow-y-hidden  overflow-x-hidden">
-                    <div className="my-10 ">
-                        <ImageList className="" cols={getCols()} variant="quilted" >
-                            {itemData.map((item, index) => (
-                                <ImageListItem
-                                    key={index}
-                                    cols={item.colspan}
-                                    rows={1}
-                                    className={`relative gallery-w ${(isXs || isSm || isMd) ? "h-auto" : "gallery"
-                                        }`}
-                                >
-                                    {isXs || isSm || isMd ? (
-                                    <Image
-                                        className="cursor-pointer"
-                                        src={item.img}
-                                        objectFit="cover"
-                                        layout="fill"
-                                        alt="img"
-                                    />
-                                   ) : ( 
-                                    <>
-                                        <Image
-                                            className="cursor-pointer "
-                                            src={item.img}
-                                            //height={item.height}
-                                            alt="img"
-                                        />
-                                    </>
-                                    )}
-                                </ImageListItem>
-                            ))}
-                        </ImageList>
-                    </div>
-                </div>
-
-                <div className="setCenter mb-6">
-                    <button className="bg-[#41913C] px-5 p-2 text-white text-sm font-semibold  rounded">Load More</button>
-                </div>
-            </div>
+  return (
+    <div className="my-8">
+      <div className="setCenter">
+        <div className="w-[85%]">
+          <h1 className="boldHeadings">#HongKongMustDo</h1>
         </div>
-    )
+      </div>
+
+      <div className="">
+        <div className="h-auto w-full tags-container  overflow-y-auto xl:overflow-y-hidden overflow-x-hidden">
+          <div className="my-10">
+            <ImageList className="" cols={getCols()} variant="quilted">
+              {itemData.map((item, index) => (
+                <ImageListItem
+                  key={index}
+                  cols={item.colspan}
+                  rows={1}
+                  className={`relative ${
+                    isXs || isSm || isMd ? "h-auto" : "gallery"
+                  } `}
+                >
+                  {isXs || isSm || isMd ? (
+                    <Image
+                      className="cursor-pointer"
+                      src={item.img}
+                      objectFit="cover"
+                      layout="fill"
+                      alt="img"
+                    />
+                  ) : (
+                    <Image
+                      className={`cursor-pointer gallery-new`}
+                      src={item.img}
+                      height={item.height}
+                      width={item.width}
+                      alt="img"
+                    />
+                  )}
+                </ImageListItem>
+              ))}
+            </ImageList>
+          </div>
+        </div>
+
+        <div className="setCenter mb-6">
+          <button className="bg-[#41913C] px-5 p-2 text-white text-sm font-semibold rounded">
+            Load More
+          </button>
+        </div>
+      </div>
+    </div>
+  );
 }

@@ -34,7 +34,7 @@ export default function ThingsToDoHeroSection({ title, subtitle, image, descript
                     <div className="text-white mt-56 ml-24 w-[40%] items-start relative">
                         <div className={actor.className}>
                             <div className="font-thin text-5xl">
-                                <h1>DESTINATION</h1>
+                                <h1>DESTINATIONS</h1>
                             </div>
                         </div>
                     </div>
