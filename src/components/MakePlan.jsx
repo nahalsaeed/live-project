@@ -33,7 +33,7 @@ export default function MakePlan() {
         </div>
       </div>
       <div className="flex justify-center">
-        <div className="text-xs text-[#818181] underline text-left w-[80%]">
+        <div className="text-xs mt-6 text-[#818181] underline text-left w-[80%]">
           <a href="#">Wild kiwi encounter - Stewart Island</a>
         </div>
       </div>

@@ -2,14 +2,14 @@
 "use client"
 import { Akronim } from "next/font/google";
 import DynamicText from "../DynamicText";
-import { usePathname } from "next/navigation"; // Import usePathname hook
+import { usePathname } from "next/navigation"; 
 import { IoIosArrowForward } from "react-icons/io";
 const akronim = Akronim({
     subsets: ['latin'],
     weight: '400',
 });
 
-const text = "Explore golden coastlines fringed with native pohutakawa trees, follow walking trails to waterfalls hidden in beech forests, or cycle through gently rolling vineyards. If you're after New Zealand's famous adventure activities and extreme sports, you can choose from bungy jumping, jet boating, skydiving or zip lining. Or relax and take it easy at beautiful hot pools, cultural attractions and art galleries.";
+const text = ["Explore golden coastlines fringed with native pohutakawa trees, follow walking trails to waterfalls hidden in beech forests, or cycle through gently rolling vineyards."," If you're after New Zealand's famous adventure activities and extreme sports, you can choose from bungy jumping, jet boating, skydiving or zip lining."," Or relax and take it easy at beautiful hot pools, cultural attractions and art galleries."] ;
 
 export default function ThingstodoTxtSection({para}) {
     const pathname = usePathname(); 

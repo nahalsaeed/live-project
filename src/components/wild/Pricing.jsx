@@ -14,7 +14,7 @@ const Pricing = () => {
     };
 
     return (
-        <div className="w-full mx-auto p-4  font-serif my-16">
+        <div className="w-full mx-auto p-4  font-serif ">
             <div className=''>
                 <h2 className="text-2xl font-semibold  mb-4 ">Pricing and Conditions</h2>
                 <div className="flex justify-between bg-gray-100 p-4 rounded-md mb-2">

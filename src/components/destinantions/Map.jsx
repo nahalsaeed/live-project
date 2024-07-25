@@ -27,8 +27,8 @@ const Map = () => {
     if (window.google) {
       setMapOptions({
         styles: mapStyles,
-        mapTyprId : "roadmap",
-        mapTypeControl: false, // Disable map type control
+        mapTypeId: "default", // Set map type to satellite
+        mapTypeControl: true, // Enable map type control
         disableDefaultUI: true,
         zoomControl: true,
         streetViewControl: true,
@@ -312,7 +312,6 @@ const Map = () => {
                       <text x="25" y="30" text-anchor="middle" font-size="14" font-family="Arial" font-weight="bold" fill="#ffffff">${marker.count}</text>
                     </svg>
                   `),
-                  // scaledSize: new window.google.maps.Size(50, 50),
                 }}
                 onLoad={() => console.log("Marker Loaded")}
                 onError={(error) => console.error("Marker Error:", error)}

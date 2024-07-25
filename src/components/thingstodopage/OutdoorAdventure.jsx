@@ -10,16 +10,13 @@ import relax7 from "@/assets/Relax7.webp";
 import { PiArrowRightThin } from "react-icons/pi";
 
 export default function OutdoorAdventure() {
-  const txtData = [
-    {
-      heading: "Outdoor adventures",
-      text: "Explore New Zealand's stunning landscapes and thrilling adventure opportunities. You can find walking and hiking trails all around the country. Choose a short walk or a multi-day trek to discover destinations such as Stewart Island/Rakiura, Fiordland, or Tongariro National Park. On your outdoors adventure, you might spot some of New Zealand's wildlife, including rare birds, dolphins, or even whales.",
-    },
-    {
-      heading: "Relax",
-      text: "New Zealand is an easy-going place. Take a leaf out of the locals' book and embrace the laid-back vibes and rejuvenating activities. Find a beach where you can sunbathe the day away, splash around in a hot pool, or shop for quirky souvenirs. There are plenty of ways to enjoy downtime on your holiday in New Zealand.",
-    },
-  ];
+
+  const heading1= "Outdoor adventures";
+  const txt1=["Explore New Zealand's stunning landscapes and thrilling adventure opportunities.","You can find walking and hiking trails all around the country. Choose a short walk or a multi-day trek to discover destinations such as Stewart Island/Rakiura, Fiordland, or Tongariro National Park."," On your outdoors adventure, you might spot some of New Zealand's wildlife, including rare birds, dolphins, or even whales."]
+  
+   const   heading2= "Relax";
+    const  txt2= "New Zealand is an easy-going place. Take a leaf out of the locals' book and embrace the laid-back vibes and rejuvenating activities. Find a beach where you can sunbathe the day away, splash around in a hot pool, or shop for quirky souvenirs. There are plenty of ways to enjoy downtime on your holiday in New Zealand.";
+  
 
   const images = [
     { src: relax1, alt: "img1", title: "Adventure and Adrenaline" },
@@ -33,9 +30,8 @@ export default function OutdoorAdventure() {
 
   return (
     <div>
-      {txtData.map((item, index) => (
-        <DynamicText key={index} heading={item.heading} text={item.text} />
-      ))}
+      <DynamicText heading={heading1} text={txt1}/>
+      <DynamicText heading={heading2} text={txt2}/>
       <div className="setCenter mt-6">
         <div className="w-[85%] 2xl:w-[70%] mt-2">
           <div className="grid grid-cols-12 gap-3">

@@ -35,7 +35,7 @@ export default function Header() {
           <Image src={Splitdylogo} alt="Splitdy logo" className="h-auto w-[200px] lg:w-[300px] md:w-[220px]" />
         </div>
         <nav className="hidden lg:flex cursor-pointer">
-          <ul className="flex space-x-8 text-xs">
+          <ul className="flex space-x-8 text-nowrap text-xs">
             {[
               { name: "Places to visit", path: "/places-to-visit" },
               { name: "Things to do", path: "/things-to-do" },
@@ -94,8 +94,9 @@ export default function Header() {
             {[
               { name: "Places to visit", path: "/places-to-visit" },
               { name: "Things to do", path: "/things-to-do" },
-              { name: "Find accommodation", path: "/find-accommodation" },
+              { name: "Find accommodation", path: "/destinations" },
               { name: "Plan your trip", path: "/plan-your-trip" },
+              { name: "Wild Kiwi", path: "/wild" },
             ].map((link) => (
               <li key={link.path}>
                 <Link href={link.path}>

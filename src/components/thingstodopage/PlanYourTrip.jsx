@@ -9,7 +9,7 @@ import { PiArrowRightThin } from "react-icons/pi";
 
 export default function PlanYourTrip() {
     const heading = "Plan Your Trip";
-    const txt = "What kind of holiday do you want to go on? New Zealand has everything from a fun backpacker scene to luxury lodges. To help you find the best things to do in New Zealand and make your planning easier, consider booking a tour.";
+    const txt = ["What kind of holiday do you want to go on? New Zealand has everything from a fun backpacker scene to luxury lodges."," To help you find the best things to do in New Zealand and make your planning easier, consider booking a tour."];
 
     const images = [
         { src: Plan1, alt: "Plan1", title: "Activity Deals in New Zealand " },
