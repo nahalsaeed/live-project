@@ -106,33 +106,22 @@ const categories = [
   },
 ];
 
-const splitActivities = (activities) => {
-  const allActivities = [];
-  categories.forEach(category => {
-    allActivities.push(...category.activities);
-  });
-  const chunks = [];
-  for (let i = 0; i < allActivities.length; i += 15) {
-    chunks.push(allActivities.slice(i, i + 15));
-  }
-  return chunks;
-};
-
 export default function ListThingsTodo() {
-  const chunks = splitActivities(categories);
-
   return (
     <div className="setCenter">
       <div className="w-[85%] 2xl:w-[70%]">
         <div className="px-4 py-8 text-xs">
-          <h1 className="boldHeadings">Things to do in New Zealand</h1>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-4">
-            {chunks.map((chunk, chunkIndex) => (
-              <ul key={chunkIndex} className="list-none space-y-2">
-                {chunk.map((activity, i) => (
-                  <li key={i} className="text-green-600">{activity}</li>
-                ))}
-              </ul>
+          <h1 className="boldHeadings text-3xl">Things to do in New Zealand</h1>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6  gap-4">
+            {categories.map((category, categoryIndex) => (
+              <div key={categoryIndex} className=" ">
+                <h2 className="font-semibold">{category.title}</h2>
+                <ul>
+                  {category.activities.map((activity, activityIndex) => (
+                    <li key={activityIndex} className="text-green-600">{activity}</li>
+                  ))}
+                </ul>
+              </div>
             ))}
           </div>
         </div>

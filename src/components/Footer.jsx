@@ -4,6 +4,7 @@ import "@/app/globals.css";
 import footerlogo from "@/assets/footer-logo.webp";
 import Image from 'next/image';
 import { useState } from 'react';
+import { IoIosArrowDown, IoIosArrowUp } from 'react-icons/io';
 
 export default function Footer() {
     const [open, setOpen] = useState(null);
@@ -68,9 +69,10 @@ export default function Footer() {
                                     <div key={section.id} className="col-span-12 md:col-span-6 lg:col-span-2 order-1 lg:order-none border-b border-gray-200 py-2 md:border-none">
                                         <div className="flex justify-between items-center cursor-pointer" onClick={() => toggle(section.id)}>
                                             <h2 className="font-bold mb-2">{section.title}</h2>
-                                            <span className="ml-2 block md:hidden">{open === section.id ? '-' : '+'}</span>
+                                            <span className="ml-2 block md:hidden">{open === section.id ?<IoIosArrowUp/>  : <IoIosArrowDown />
+                                            }</span>
                                         </div>
-                                        <ul className={`text-sm mt-2 transition-all duration-300 ease-in-out ${open === section.id ? 'max-h-screen' : 'max-h-0 overflow-hidden'} md:max-h-screen md:block`}>
+                                        <ul className={`text-sm mt-2 transition-all duration-30000 ${open === section.id ? 'max-h-screen' : 'max-h-0 overflow-hidden'} md:max-h-screen md:block`}>
                                             {section.items.map((item, idx) => (
                                                 <li key={idx} className="mb-1 text-left">
                                                     <a href={item.link} className="hover:underline text-xs">
