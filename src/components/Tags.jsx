@@ -16,7 +16,7 @@ export default function Tags({ tags }) {
                     <span
                         key={index}
                         onClick={() => handleTagClick(index)}
-                        className={`rounded-full px-3 py-1 text-xs cursor-pointer ${index === activeTag ? 'bg-black text-white' : 'bg-[#D8D8D8] text-black'}`}
+                        className={`rounded-full px-3 py-1 text-xs font-medium cursor-pointer ${index === activeTag ? 'bg-black text-white' : 'bg-[#D8D8D8] text-black'}`}
                     >
                         {tag}
                     </span>

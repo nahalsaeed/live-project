@@ -13,7 +13,7 @@ export default function DynamicText({ heading, text }) {
             {heading}
           </h1>
           {textArray.map((txt, index) => (
-            <p key={index} className="text-xs lg:text-sm 2xl:text-lg  mt-3">
+            <p key={index} className="text-xs  2xl:text-lg  mt-5">
               {txt}
             </p>
           ))}

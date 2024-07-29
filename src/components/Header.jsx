@@ -77,7 +77,7 @@ export default function Header() {
           </div>
           <div className="hidden lg:flex">
             <select className="bg-transparent text-sm text-white p-2 rounded focus:outline-none focus:ring-2 focus:ring-white">
-              <option className="text-black hover:text-white">United Kingdom</option>
+              <option className="text-black hover:text-white">English</option>
               <option className="text-black hover:text-white">繁體</option>
             </select>
           </div>

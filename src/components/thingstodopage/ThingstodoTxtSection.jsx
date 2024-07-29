@@ -19,9 +19,9 @@ export default function ThingstodoTxtSection({para}) {
 
     return (
         <div>
-            <div className="h-[280px] text-white bg-black ">
+            <div className="h-[280px] text-white bg-[#3B5998] ">
                 <div className="mx-5 lg:ml-28 2xl:ml-56 flex justify-between flex-col ">
-                    <p className="text-xs mt-2 gap-1 flex flex-row">Home <IoIosArrowForward  className="mt-[3px]"/>
+                    <p className="text-xs mt-6 gap-1 flex flex-row">Home <IoIosArrowForward  className="mt-[3px]"/>
                     Things To do</p>
                     <div className=" mt-8">
                         
@@ -33,12 +33,10 @@ export default function ThingstodoTxtSection({para}) {
             </div>
             {isThingsToDoPage && (
                 <>
-                    <DynamicText text={text} />
-                    <div className="flex justify-center items-center h-10">
-                        <button className="bg-green-600 text-xs p-2 px-4 text-white rounded">
-                            Find Things To do
-                        </button>
-                    </div>
+                <div className="my-[100px] font-medium">
+                    <DynamicText text={text}  />
+  
+                </div>
                 </>
             )}
         </div>

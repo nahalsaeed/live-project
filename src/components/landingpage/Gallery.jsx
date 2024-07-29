@@ -80,11 +80,11 @@ export function GalleryComponent() {
     <div className=" bg-gradient-to-b from-[#3B5998] from-80% to-white to-20% h-fit overflow-y-scroll text-white">
       <div className="flex justify-center items-center">
         <div className="w-[88%]  mx-5 md:mx-14 2xl:w-[70%]">
-          <div className="text-xs mt-10 flex flex-row underline gap-2">
+          {/* <div className="text-xs mt-10 flex flex-row underline gap-2">
             <p className="cursor-pointer">North Island destination</p>|
             <p className="cursor-pointer">South Island destinations</p>|
             <p className="cursor-pointer">Explore all regions</p>
-          </div>
+          </div> */}
           <div className="mt-24">
             <h1 className="boldHeadings sm:text-3xl lg:text-5xl">Must do Hong Kong experiences</h1>
           </div>

@@ -53,7 +53,7 @@ export default function ThingsToDo() {
             <div className="w-[85%]  2xl:w-[70%]">
                 <h1 className="boldHeadings ">Find things to do</h1>
 
-                <p className="text-left mt-8 text-xs">Select type of activity:</p>
+                <p className="text-left mt-8 font-medium text-xs">Select type of activity:</p>
 
                 <div className="flex flex-row ">
                     <div className="tags-container flex flex-row text-nowrap w-[60%] md:w-[75%]  lg:w-[65%] xl:w-[70%] space-x- mt-4 overflow-auto" >

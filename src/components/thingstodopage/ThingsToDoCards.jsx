@@ -40,7 +40,7 @@ export default function ThingsToDoCards() {
         },
     ];
 
-    const tags = ['Adrenaline', 'Boat cruises','Cycling & Mountain biking','History, Arts & Culture', 'Food & Drink experiences', 'Leisure & Entertainment','Walking & hiking', 'Nature & wildlife', 'Film experiences'];
+    const tags = ['Geopark Explore','History, Arts & Culture', 'Food & Drink','Walking & hiking', 'Nature & wildlife', 'Film experiences'];
 
   return (
     <div>
