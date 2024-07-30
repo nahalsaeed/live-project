@@ -62,8 +62,8 @@ export default function ListThingsTodo() {
   return (
     <div className="setCenter">
       <div className="w-[85%] 2xl:w-[70%]">
-        <div className="px-4 py-8 text-xs lg:text-lg">
-          <h1 className="boldHeadings text-3xl">Things to do in Hong Kong</h1>
+      <div className="px-4 py-8 text-xs lg:text-sm 2xl:text-lg">
+      <h1 className="boldHeadings text-3xl">Things to do in Hong Kong</h1>
           <div className="columns-1 sm:columns-2 md:columns-3 lg:columns-6 gap-10">
             {categories.map((category, categoryIndex) => (
               <div key={categoryIndex} className="break-inside-avoid p-1">
