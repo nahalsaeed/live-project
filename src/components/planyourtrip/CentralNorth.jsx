@@ -11,7 +11,7 @@ import img5 from "@/assets/central4.webp"
 import useMediaQuery from "@material-ui/core/useMediaQuery";
 import { useTheme } from "@material-ui/core/styles";
 
-const heading = "Central North Island"
+const heading = "Top places to visit"
 const txt = "From the stunning beaches in Coromandel to Rotorua's geothermal wonderland, here are some spots in central North Island you shouldn't miss."
 export default function CentralNorth() {
   const theme = useTheme();
@@ -32,35 +32,35 @@ export default function CentralNorth() {
 
   const itemData = [
     {
-      title: "The Coromandel  ",
+      title: "Ninepin Islands  ",
       img: img1,
       height: 436,
       width: 660,
       colspan: isXs ? 1 : 2,
     },
     {
-      title: "Hamilton - Waikato ",
+      title: "High Island & Po Pin Chau",
       img: img2,
       height: 436,
       width: 310,
       colspan: 1,
     },
     {
-      title: "Bay Of Plenty ",
+      title: "Top 20 beautiful beaches ",
       img: img3,
       height: 436,
       width: 310,
       colspan: 1,
     },
     {
-      title: "Taupō  ",
+      title: "Devil’s Fist, Port Island and Grass Island  ",
       img: img4,
       height: 436,
       width: 660,
       colspan: isXs ? 1 : 2,
     },
     {
-      title: " Tairāwhiti Gisborne ",
+      title: " Ung Kong Group",
       img: img5,
       height: 436,
       width: 660,
@@ -70,7 +70,7 @@ export default function CentralNorth() {
   ];
   return (
     <div>
-      <DynamicText heading={heading} text={txt} />
+      <DynamicText heading={heading}  />
       <div className=" h-fit overflow-y-scroll">
         <div className="flex justify-center items-center">
           <div className="w-[88%]  mx-5 md:mx-14 2xl:w-[70%]">

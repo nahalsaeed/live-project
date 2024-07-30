@@ -8,10 +8,12 @@ import { usePathname } from "next/navigation"; // Import usePathname hook
 const CardMap = ({ onClose }) => {
   const pathname = usePathname(); 
 
-  const isDestination = pathname === "/destinations";
+  const isDestination = pathname === "/wild";
+  const isPlanyourtrip = pathname === "/plan-your-trip";
+
   return (
     <>
-    { isDestination ? (<div className="absolute top-[10px] left-[10px] bg-white shadow-lg   w-[350px] z-10">
+    { !isDestination ? (<div className="absolute top-[10px] left-[10px] bg-white shadow-lg   w-[350px] z-10">
       <div className="relative">
         <Image
           src={Figure}

@@ -18,29 +18,29 @@ export default function CardSection4() {
         id: 1,
         imageSrc: card17,
         title: 'Release Wanaka - Brownston Street',
-        description: 'From NZD $ 1430.00',
+        description: 'From HKD $ 1430.00',
     },
     {
         id: 2,
         imageSrc: card18,
         title: 'Bloxham House',
-        description: 'NZD $ 2500.00 - NZD $ 3500.00',
+        description: 'HKD $ 2500.00 - HKD $ 3500.00',
     },
     {
         id: 3,
         imageSrc: card19,
         title: 'Release Wanaka - The Banya',
-        description: 'From NZD $ 800.00',
+        description: 'From HKD $ 800.00',
     },
     {
         id: 4,
         imageSrc: card20,
         title: 'Release Wanaka - Morrows Mead',
-        description: 'NZD $ 1250.00 - NZD $ 1315.00',
+        description: 'HKD $ 1250.00 - HKD $ 1315.00',
     },
 ];
 
-const tags = ['Holiday homes', 'Motels','Boutique & Lodge','Bed & breakfast','Hotels'];
+const tags = ['Apartments', 'Camping','Boutique & Lodge','Backpackers and Hostels','Hotels'];
 
 return (
 <div>
@@ -75,7 +75,7 @@ return (
             </div>
 
             <p className="text-xs text-[#767676] font-medium">
-            994 Holiday homes
+            994 Apartments
             </p>
 
             <button className="bg-[#41913C] px-4 p-2 my-8 rounded-md text-white text-lg font-semibold flex felx-row gap-1">

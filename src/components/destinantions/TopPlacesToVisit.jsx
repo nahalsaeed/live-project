@@ -30,35 +30,35 @@ export default function TopPlacesToVisit() {
   
     const itemData = [
       {
-        title: "Explore the North Island  ",
+        title: "Explore all regions ",
         img: Gallery1,
         height: 436,
         width: 660,
         colspan: isXs ? 1 : 2,
       },
       {
-        title: "Explore the South Island ",
+        title: "Ninepin Islands",
         img: Gallery2,
         height: 436,
         width: 310,
         colspan: 1,
       },
       {
-        title: "Visit cities and towns ",
+        title: "Geopark Explore ",
         img: Gallery3,
         height: 436,
         width: 310,
         colspan: 1,
       },
       {
-        title: "Discover other islands you can visit ",
+        title: "Devil’s Fist, Port Island and Grass Island",
         img: Gallery4,
         height: 436,
         width: 660,
         colspan: isXs ? 1 : 2,
       },
       {
-        title: "Popular places  ",
+        title: "Four Sea Arches and Volcanic Rock ",
         img: Gallery5,
         height: 436,
         width: 660,
@@ -71,7 +71,7 @@ export default function TopPlacesToVisit() {
   return (
     <div>
 
-    <DynamicText heading={heading} text={txt}/>
+    <DynamicText heading={heading} />
       <div className=" h-fit overflow-y-scroll">
       <div className="flex justify-center items-center">
         <div className="w-[88%]  mx-5 md:mx-14 2xl:w-[70%]">

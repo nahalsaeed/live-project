@@ -4,42 +4,43 @@ import Image from "next/image";
 import Category from "@/assets/Category.png";
 import Map from "@/assets/Map.png";
 import Card from "../Card";
-import card5 from "@/assets/card5.webp";
-import card6 from "@/assets/card6.webp";
-import card7 from "@/assets/card7.webp";
-import card8 from "@/assets/card8.webp";
+import card1 from "@/assets/card1.png";
+import card2 from "@/assets/card2.png";
+import card3 from "@/assets/card3.png";
+import card4 from "@/assets/card4.png";
+
 import { PiArrowRightThin } from "react-icons/pi";
 import "@/app/globals.css";
 import Tags from '../Tags';
 export default function CardSection1() { 
     const cardsData = [
-    {
-        id: 1,
-        imageSrc: card5,
-        title: 'Heli-Wine Hop Nelson & Marlborough Vineyards with Helicopters Nelson',
-        description: 'NZD $ 399.00 - NZD $ 799.00',
-    },
-    {
-        id: 2,
-        imageSrc: card6,
-        title: 'Marlborough Tour Company - Private Tours',
-        description: 'NZD $ 575.00 - NZD $ 750.00',
-    },
-    {
-        id: 3,
-        imageSrc: card7,
-        title: 'Ananda Black VIP Premium Private Tour of Waiheke Island',
-        description: 'NZD $ 400.00 - NZD $ 750.00',
-    },
-    {
-        id: 4,
-        imageSrc: card8,
-        title: 'Kiwi Journeys - Tasmans Great Taste Trail',
-        description: 'NZD $ 1579.00 - NZD $ 1850.00',
-    },
+        {
+            id: 1,
+            imageSrc: card1,
+            title: 'Lost World Full Day Epic',
+            description: 'From HKD $ 595.00',
+        },
+        {
+            id: 2,
+            imageSrc: card2,
+            title: 'Dart River Wilderness Jet Experience',
+            description: 'From HKD $ 299.00',
+        },
+        {
+            id: 3,
+            imageSrc: card3,
+            title: 'KJet + Milford Sound Day Tour',
+            description: 'From HKD $ 350.00',
+        },
+        {
+            id: 4,
+            imageSrc: card4,
+            title: 'Deep Canyon',
+            description: 'HKD $ 370.00 - HKD $ 2300.00',
+        },
 ];
 
-const tags = ['Food & Drink experiences', 'Nature & wildlife','History, Arts & Culture','Sightseeing','Adrenaline'];
+const tags = [ 'Geopark Explore','History, Arts & Culture','Food & Drink','Walking & Hiking','Nature & Wildlife','Film Experiences'];
 
 return (
 <div>
@@ -74,8 +75,8 @@ return (
             </div>
 
             <p className="text-xs text-[#767676] font-medium">
-            308 Geopark Explore activities
-            </p>
+            308 Adventure activities
+             </p>
 
             <button className="bg-[#41913C] px-4 p-2 my-8 rounded-md text-white text-lg font-semibold flex felx-row gap-1">
                 See all <PiArrowRightThin className="mt-[6px]" />

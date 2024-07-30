@@ -7,8 +7,7 @@ const txt = "Whether you prefer mountains or beaches, here are some of the place
 export default function NorthMap() {
     return (
         <div>
-            <DynamicText heading={heading} text={txt} />
-            <div className="setCenter mt-5">
+            <div className="setCenter my-14">
                 <div className="w-[85%]">
                     <Map />
                 </div>

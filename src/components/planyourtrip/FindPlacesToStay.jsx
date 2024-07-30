@@ -5,49 +5,50 @@ import Image from "next/image";
 import Category from "@/assets/Category.png";
 import Map from "@/assets/Map.png";
 import Card from "../Card";
-import card1 from "@/assets/plancard5.webp";
-import card2 from "@/assets/plancard6.webp";
-import card3 from "@/assets/plancard7.webp";
-import card4 from "@/assets/plancard8.webp";
+import card17 from "@/assets/card17.webp";
+import card18 from "@/assets/card18.webp";
+import card19 from "@/assets/card19.webp";
+import card20 from "@/assets/card20.webp";
 import { PiArrowRightThin } from "react-icons/pi";
 import "@/app/globals.css";
 import Tags from '../Tags';
-export default function FindPlacesToStay() { 
+export default function CardSection4() { 
     const cardsData = [
     {
         id: 1,
-        imageSrc: card1,
-        title: 'Regent of Rotorua',
-        description: 'NZD $ 168.00 - NZD $ 538.00',
+        imageSrc: card17,
+        title: 'Release Wanaka - Brownston Street',
+        description: 'From HKD $ 1430.00',
     },
     {
         id: 2,
-        imageSrc: card2,
-        title: 'Hotel Fitzroy curated by Fable',
-        description: 'NZD $ 350.00 - NZD $ 700.00',
+        imageSrc: card18,
+        title: 'Bloxham House',
+        description: 'HKD $ 2500.00 - HKD $ 3500.00',
     },
     {
         id: 3,
-        imageSrc: card3,
-        title: 'Quality Hotel Lincoln Green',
-        description: 'NZD $ 119.00 - NZD $ 499.00',
+        imageSrc: card19,
+        title: 'Release Wanaka - The Banya',
+        description: 'From HKD $ 800.00',
     },
     {
         id: 4,
-        imageSrc: card4,
-        title: 'QT Auckland',
-        description: 'NZD $ 279.00 - NZD $ 999.00',
+        imageSrc: card20,
+        title: 'Release Wanaka - Morrows Mead',
+        description: 'HKD $ 1250.00 - HKD $ 1315.00',
     },
 ];
 
-const tags = [' Hotels', 'Motels','Bed & Breakfast','Boutique & Lodge','Holiday Parks & Campgrounds'];
+const tags = ['Apartments', 'Camping','Boutique & Lodge','Backpackers and Hostels','Hotels'];
 
 return (
-<div className="py-6">
+<div>
+   <div className="setCenter bg-[#F8F8F8] mt-10 ">
+        <div className="w-[85%]  2xl:w-[70%]">
+            <h1 className="font-bold text-3xl">Find places to stay</h1>
 
-            <h1 className="font-bold text-3xl">Find Places To Stay</h1>
-
-            <p className="text-left mt-8 text-xs">Select type of transport:</p>
+            <p className="text-left mt-8 text-xs">Select type of accommodation:</p>
 
             <div className="flex flex-row ">
                 <div className="tags-container flex flex-row text-nowrap w-[60%] md:w-[75%]  lg:w-[65%] xl:w-[70%] space-x- mt-4 overflow-auto" >
@@ -55,7 +56,7 @@ return (
                 </div>
                 <div className="flex flex-row gap-2 absolute right-14 lg:right-32 2xl:right-96 text-xs mt-4">
                     <Image src={Category} className="h-5 w-auto" alt="category" />
-                    <p className="text-[#41913C] cursor-pointer hidden  lg:hidden xl:block">See all 906 transport</p>
+                    <p className="text-[#41913C] cursor-pointer hidden  lg:hidden xl:block">See all 3517 accommodation</p>
                     <span className="text-[#D8D8D8]">|</span>
                     <Image src={Map} className="h-5 w-auto ml-2" alt="map" />
                     <p className="text-[#41913C] cursor-pointer hidden lg:hidden xl:block">Map View</p>
@@ -74,14 +75,16 @@ return (
             </div>
 
             <p className="text-xs text-[#767676] font-medium">
-            463 Rental cars
+            994 Apartments
             </p>
 
             <button className="bg-[#41913C] px-4 p-2 my-8 rounded-md text-white text-lg font-semibold flex felx-row gap-1">
                 See all <PiArrowRightThin className="mt-[6px]" />
             </button>
         </div>
-    
+    </div>
+
+</div>
 )
 }
 

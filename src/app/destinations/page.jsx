@@ -23,9 +23,9 @@ export default function Page() {
             <Map />
             <CardSection1 />
             <CardSection4 />
-            <CardSection2 />
-            <CardSection3 />
-            <YouMayAlsoBeInterestedIn />
+            {/* <CardSection2 /> */}
+            {/* <CardSection3 /> */}
+            {/* <YouMayAlsoBeInterestedIn /> */}
             <Footer />
         </div>
     );
