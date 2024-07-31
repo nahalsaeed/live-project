@@ -55,7 +55,7 @@ export default function ThingsToDoCards() {
                     <div className="tags-container flex flex-row text-nowrap w-[60%] md:w-[75%]  lg:w-[65%] xl:w-[70%] space-x- mt-4 overflow-auto" >
                        <Tags tags={tags}/>
                     </div>
-                    <div className="flex flex-row gap-2 absolute right-14 lg:right-32 2xl:right-96 text-xs mt-4">
+                    <div className="flex flex-row gap-2 absolute right-14 lg:right-32  2xl:right-56 text-xs mt-4 options">
                         <Image src={Category} className="h-5 w-auto" alt="category" />
                         <p className="text-[#41913C] cursor-pointer hidden  lg:hidden xl:block">See all 3402 activities</p>
                         <span className="text-[#D8D8D8]">|</span>
