@@ -19,7 +19,7 @@ export default function PlanYourTrips() {
     <div className="flex flex-col overflow-hidden">
       <Header />
       <ThingsToDoHeroSection description={"description"} image={northimg}/>
-      <ThingstodoTxtSection para={"New Zealand's North Island offers island sanctuariesand lively cities with a large helping of culture and history for a truly diverse holiday experience."}/>
+      <ThingstodoTxtSection page={"Plan Your Trip"} para={"New Zealand's North Island offers island sanctuariesand lively cities with a large helping of culture and history for a truly diverse holiday experience."}/>
       {/* <UpperNorthIsland /> */}
       <CentralNorth />
       {/* <LowerNorth /> */}
