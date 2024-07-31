@@ -15,7 +15,7 @@ export default function Page() {
         <div className="flex flex-col overflow-hidden">
             <Header />
             <ThingsToDoHeroSection title="THINGS TO DO" subtitle="HONG KONG" image={herosectionImg} />
-            <ThingstodoTxtSection para={"With two unique islands, 14 national parks, and dozens of diverse cities, there are plenty of New Zealand attractions and activities to choose from."}/>
+            <ThingstodoTxtSection page={"Things To Do"} para={"With two unique islands, 14 national parks, and dozens of diverse cities, there are plenty of New Zealand attractions and activities to choose from."}/>
             <TopAttractions />
             {/* <OutdoorAdventure /> */}
             {/* <Culture /> */}
