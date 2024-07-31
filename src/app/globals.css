@@ -114,3 +114,38 @@
   height: 16px;
   color: white;
 }
+@media screen  and (min-width:1840px){
+
+.options{
+   position: absolute !important;
+   right: 300px !important;
+}
+}
+
+@media screen  and (min-width:2240px){
+
+  .options{
+     position: absolute !important;
+     right: 380px !important;
+  }
+  }
+
+  @media screen  and (min-width:1725px){
+
+    .YouAreHere{
+       width: 70% !important;
+    }
+    }
+    
+  @media screen  and (min-width:1900px){
+
+    .YouAreHere{
+       width: 60% !important;
+    }
+    }
+    @media screen  and (min-width:2270){
+
+      .YouAreHere{
+         width: 50% !important;
+      }
+      }

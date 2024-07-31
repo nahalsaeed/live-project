@@ -19,13 +19,13 @@ export default function ThingstodoTxtSection({para}) {
 
     return (
         <div>
-            <div className="h-[280px] text-white bg-[#3B5998] ">
+            <div className="h-[280px] 2xl:h-[300px] text-white bg-[#3B5998] ">
                 <div className="mx-5 lg:ml-28 2xl:ml-56 flex justify-between flex-col ">
                     <p className="text-xs mt-6 gap-1 flex flex-row">Home <IoIosArrowForward  className="mt-[3px]"/>
                     Things To do</p>
                     <div className=" mt-8">
                         
-                        <div className={`${akronim.className} mt-5 w-[80%] lg:w-[45%] text-xl lg:text-3xl 2xl:text-5xl`}>
+                        <div className={`${akronim.className} mt-5 w-[80%] lg:w-[45%] text-xl lg:text-3xl 2xl:text-4xl`}>
                             <p>{para}</p>
                         </div>
                     </div>

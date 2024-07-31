@@ -54,7 +54,7 @@ export default function Footer() {
         <div>
             <div className='bg-[#2D2D2D] text-white h-10 text-sm mt-10'>
                 <div className='setCenter'>
-                    <div className='w-[85%] mt-3 2xl:w-[50%]'>
+                    <div className='w-[85%] mt-3 2xl:w-[78%] YouAreHere'>
                         <span className='p-1 mr-2 rounded-md bg-[#171717]'>You are here</span> Home
                     </div>
                 </div>

@@ -20,29 +20,29 @@ export default function ThingsToDo() {
             id: 1,
             imageSrc: card1,
             title: 'Lost World Full Day Epic',
-            description: 'From NZD $ 595.00',
+            description: 'From HKD $ 595.00',
         },
         {
             id: 2,
             imageSrc: card2,
             title: 'Dart River Wilderness Jet Experience',
-            description: 'From NZD $ 299.00',
+            description: 'From HKD $ 299.00',
         },
         {
             id: 3,
             imageSrc: card3,
             title: 'KJet + Milford Sound Day Tour',
-            description: 'From NZD $ 350.00',
+            description: 'From HKD $ 350.00',
         },
         {
             id: 4,
             imageSrc: card4,
             title: 'Deep Canyon',
-            description: 'NZD $ 370.00 - NZD $ 2300.00',
+            description: 'HKD $ 370.00 - HKD $ 2300.00',
         },
     ];
 
-    const tags = ['Adrenaline', 'History, Arts & Culture', 'Food & Drink experiences', 'Walking & hiking', 'Nature & wildlife', 'Film experiences'];
+    const tags = ['Geopark Explore', 'History, Arts & Culture', 'Food & Drink experiences', 'Walking & hiking', 'Nature & wildlife', 'Film experiences'];
 
     const handleTagClick = (index) => {
         setActiveTag(index);
@@ -59,7 +59,7 @@ export default function ThingsToDo() {
                     <div className="tags-container flex flex-row text-nowrap w-[60%] md:w-[75%]  lg:w-[65%] xl:w-[70%] space-x- mt-4 overflow-auto" >
                         <Tags tags={tags} />
                     </div>
-                    <div className="flex flex-row gap-2 absolute right-14 lg:right-32 2xl:right-96 text-xs mt-4">
+                    <div className="flex flex-row gap-2 absolute right-14 lg:right-32  2xl:right-56 text-xs mt-4 options">
                         <Image src={Category} className="h-5 w-auto" alt="category" />
                         <p className="text-[#41913C] cursor-pointer hidden  lg:hidden xl:block">See all 3402 activities</p>
                         <span className="text-[#D8D8D8]">|</span>
