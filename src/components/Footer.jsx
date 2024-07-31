@@ -26,6 +26,8 @@ export default function Footer() {
                 { text: 'Instagram', link: '#', icon: 'fa-instagram' },
                 { text: 'Facebook', link: '#', icon: 'fa-facebook-f' },
                 { text: 'YouTube', link: '#', icon: 'fa-youtube' },
+                { text: 'WeChat', link: '#', icon: 'fab fa-weixin' },
+
             ],
         },
         {

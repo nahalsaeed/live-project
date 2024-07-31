@@ -7,7 +7,7 @@ const archivo = Archivo({
     weight: '400',
 })
 
-export default function Card({ imageSrc, title, description }) {
+export default function Card({ imageSrc, title, description ,review}) {
 
     return (
         <div className="max-w-sm rounded-xl overflow-hidden   w-[90%] h-full shadow-lg relative mx-auto">
@@ -21,7 +21,7 @@ export default function Card({ imageSrc, title, description }) {
                 <div className="flex flex-row gap-2  ml-7 mt-4">
                     <Image src={owl} alt="owl" className="h-4 w-auto" />
                     <Image src={progress} alt="progress" className="h-4 w-auto" />
-                    <p className="text-[10px]">Based on 2632 reviews</p>
+                    <p className="text-[10px]">Based on {review} reviews</p>
                 </div>
                 <div className="flex  flex-col justify-normal items-center w-full h-auto my-6 ">
                     {/* <hr className="bg-black w-[80%]" /> */}

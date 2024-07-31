@@ -20,24 +20,28 @@ export default function ThingsToDoCards() {
             imageSrc: card1,
             title: 'Lost World Full Day Epic',
             description: 'From HKD $ 595.00',
+            review:'1660'
         },
         {
             id: 2,
             imageSrc: card2,
             title: 'Dart River Wilderness Jet Experience',
             description: 'From HKD $ 299.00',
+            review:'2632'
         },
         {
             id: 3,
             imageSrc: card3,
             title: 'KJet + Milford Sound Day Tour',
             description: 'From HKD $ 350.00',
+            review:'966'
         },
         {
             id: 4,
             imageSrc: card4,
             title: 'Deep Canyon',
             description: 'HKD $ 370.00 - HKD $ 2300.00',
+            review:'353'
         },
     ];
 
@@ -71,6 +75,7 @@ export default function ThingsToDoCards() {
                             imageSrc={card.imageSrc}
                             title={card.title}
                             description={card.description}
+                            review={card.review}
                         />
                     ))}
                 </div>

@@ -70,7 +70,7 @@ export default function ListThingsTodo() {
                 <h2 className="font-semibold">{category.title}</h2>
                 <ul className=" list-inside">
                   {category.activities.map((activity, activityIndex) => (
-                    <li key={activityIndex} className="text-green-600">{activity}</li>
+                    <li key={activityIndex} className="text-green-600 truncate">{activity}</li>
                   ))}
                 </ul>
               </div>))}
