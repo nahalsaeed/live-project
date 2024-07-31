@@ -19,25 +19,25 @@ export default function ThingsToDoCards() {
             id: 1,
             imageSrc: card1,
             title: 'Lost World Full Day Epic',
-            description: 'From NZD $ 595.00',
+            description: 'From HKD $ 595.00',
         },
         {
             id: 2,
             imageSrc: card2,
             title: 'Dart River Wilderness Jet Experience',
-            description: 'From NZD $ 299.00',
+            description: 'From HKD $ 299.00',
         },
         {
             id: 3,
             imageSrc: card3,
             title: 'KJet + Milford Sound Day Tour',
-            description: 'From NZD $ 350.00',
+            description: 'From HKD $ 350.00',
         },
         {
             id: 4,
             imageSrc: card4,
             title: 'Deep Canyon',
-            description: 'NZD $ 370.00 - NZD $ 2300.00',
+            description: 'HKD $ 370.00 - HKD $ 2300.00',
         },
     ];
 
