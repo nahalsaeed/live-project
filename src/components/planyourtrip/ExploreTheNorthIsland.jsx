@@ -1,16 +1,14 @@
-import FindMultiDayTour from "./FindMultiDayTour";
+import "@/app/globals.css";
 import FindPlacesToStay from "./FindPlacesToStay";
 import FindThingsToDo from "./FindThingsToDo";
-import FindTransport from "./FindTransport";
-import "@/app/globals.css";
+import YouMayAlsoInterestedIn from "./YouMayAlsoInterestedIn";
 
 export default function ExploreTheNorthIsland() {
   return (
     <div className="setCenter bg-[#F8F8F8] ">
         <FindThingsToDo />
         <FindPlacesToStay />
-        {/* <FindTransport /> */}
-        {/* <FindMultiDayTour /> */}
+       <YouMayAlsoInterestedIn/>
       </div>
 
   )

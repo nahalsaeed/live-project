@@ -15,9 +15,7 @@ export default function PricingGrid() {
           </div>
           <div className="col-span-12 lg:col-span-3 mt-8 lg:mt-20">
             <div className="grid grid-cols-2 gap-4 lg:gap-2">
-              <Image src={img1} className="col-span-1" alt="Qualmark" />
-              <Image src={img3} className="col-span-1" alt="Choice Award" />
-              <Image src={img2} className="col-span-1" alt="Tripadvisor" />
+             <Image src={img2} className="col-span-2" alt="Tripadvisor" />
             </div>
           </div>
         </div>

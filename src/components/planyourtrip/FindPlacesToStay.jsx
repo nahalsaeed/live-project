@@ -1,16 +1,16 @@
 
 "use client"
 
-import Image from "next/image";
-import Category from "@/assets/Category.png";
-import Map from "@/assets/Map.png";
-import Card from "../Card";
+import "@/app/globals.css";
 import card17 from "@/assets/card17.webp";
 import card18 from "@/assets/card18.webp";
 import card19 from "@/assets/card19.webp";
 import card20 from "@/assets/card20.webp";
+import Category from "@/assets/Category.png";
+import Map from "@/assets/Map.png";
+import Image from "next/image";
 import { PiArrowRightThin } from "react-icons/pi";
-import "@/app/globals.css";
+import Card from "../Card";
 import Tags from '../Tags';
 export default function CardSection4() { 
     const cardsData = [

@@ -1,7 +1,37 @@
 "use client"
 import { useState } from 'react';
 import Map from '../destinantions/Map';
+import { IoIosArrowDown, IoIosArrowUp } from 'react-icons/io';
 
+
+const Price = [
+    {
+        text: "Adult (1-5 persons)",
+        price: "$880.00",
+    },
+    {
+        text: "Adult (6 persons)",
+        price: "$860.00",
+    },
+    {
+        text: "Adult (8 persons)",
+        price: "$840.00",
+    },
+    {
+        text: "Adult (10 persons)",
+        price: "$820.00",
+    },
+    {
+        text: "Adult (12 persons)",
+        price: "$800.00",
+    },
+    {
+        text: "Children under 12",
+        price: "$400.00",
+    },
+
+
+]
 const Pricing = () => {
     const [open, setOpen] = useState(null);
 
@@ -14,21 +44,28 @@ const Pricing = () => {
     };
 
     return (
-        <div className="w-full mx-auto p-4  font-serif ">
+        <div className="w-full lg:w-[80%] mx-auto px-4  font-serif ">
             <div className=''>
-                <h2 className="text-2xl font-semibold  mb-4 ">Pricing and Conditions</h2>
-                <div className="flex justify-between bg-gray-100 p-4 rounded-md mb-2">
-                    <span>Adult</span>
-                    <span>$229.00</span>
+                <h2 className="text-2xl font-semibold  mb-7 ">Price, Terms and Conditions</h2>
+                <div className='bg-[#F8F8F8] p-2 '>
+                   
+                    {Price.map((item, index) => (
+                      
+                        <div key={index} className="flex  justify-between  p-1 rounded-md mb-2">
+                            <span >{item.text}</span>
+                            <span className='mr-6 md:mr-20 lg:mr-40 font-bold'>{item.price}</span>
+                        </div>
+                    ))}
                 </div>
+
                 <div>
                     <div
-                        className="border-b border-gray-200 py-2  cursor-pointer"
+                        className="border-b border-[#D8D8D8] py-6  cursor-pointer"
                         onClick={() => toggle(1)}
                     >
                         <div className="flex justify-between items-center">
                             <span>Age restriction</span>
-                            <span>{open === 1 ? '-' : '+'}</span>
+                            <span>{open === 1 ? <IoIosArrowUp/> : <IoIosArrowDown />}</span>
                         </div>
                         {open === 1 && (
                             <div className="mt-2 text-gray-600">
@@ -36,12 +73,12 @@ const Pricing = () => {
                         )}
                     </div>
                     <div
-                        className="border-b border-gray-200 py-2 cursor-pointer"
+                        className="border-b border-[#D8D8D8] py-6 cursor-pointer"
                         onClick={() => toggle(2)}
                     >
                         <div className="flex justify-between items-center">
                             <span>Terms and conditions</span>
-                            <span>{open === 2 ? '-' : '+'}</span>
+                            <span>{open === 2 ? <IoIosArrowUp/> : <IoIosArrowDown />}</span>
                         </div>
                         {open === 2 && (
                             <div className="mt-2 text-gray-600">
@@ -50,12 +87,12 @@ const Pricing = () => {
                         )}
                     </div>
                     <div
-                        className="border-b border-gray-200 py-2 cursor-pointer"
+                        className="border-b border-[#D8D8D8] py-6 cursor-pointer"
                         onClick={() => toggle(3)}
                     >
                         <div className="flex justify-between items-center">
                             <span>Cancellation Policy</span>
-                            <span>{open === 3 ? '-' : '+'}</span>
+                            <span>{open === 3 ? <IoIosArrowUp/> : <IoIosArrowDown />}</span>
                         </div>
                         {open === 3 && (
                             <div className="mt-2 text-gray-600">
@@ -72,9 +109,7 @@ const Pricing = () => {
                     guide, venture by torchlight through the native forest until the track emerges on to Ocean Beach.
                     This wide sandy beach is where the Southern brown kiwi (Rakiura Tokoeka) are found - often
                     searching for food.</p>
-                <button className="bg-[#41913C] p-3  rounded-md text-white text-sm font-bold flex felx-row gap-1">
-                    Visit Website
-                </button>
+              
 
             </div>
             <div className='my-20'>
