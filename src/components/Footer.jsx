@@ -3,10 +3,20 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 import "@/app/globals.css";
 import footerlogo from "@/assets/footer-logo.webp";
 import Image from 'next/image';
+import { usePathname } from "next/navigation"; 
+import { IoIosArrowForward } from "react-icons/io";
 import { useState } from 'react';
 import { IoIosArrowDown, IoIosArrowUp } from 'react-icons/io';
 
 export default function Footer() {
+
+    const pathname = usePathname(); 
+    const isPlacesToVisit = pathname === "/places-to-visit";
+    const isThingsToDoPage = pathname === "/things-to-do";
+    const isDestination = pathname === "/destinations";
+    const isPlanYourTrip = pathname === "/plan-your-trip";
+
+
     const [open, setOpen] = useState(null);
 
     const toggle = (index) => {
@@ -56,8 +66,19 @@ export default function Footer() {
         <div>
             <div className='bg-[#2D2D2D] text-white h-10 text-sm mt-10'>
                 <div className='setCenter'>
-                    <div className='w-[85%] mt-3 2xl:w-[78%] YouAreHere'>
-                        <span className='p-1 mr-2 rounded-md bg-[#171717]'>You are here</span> Home
+                    <div className='w-[85%] mt-3 2xl:w-[78%] YouAreHere flex flex-row'>
+                      {isPlacesToVisit ?(
+                      <div className='flex flex-row'>  <span className='p-1 mr-2 rounded-md bg-[#171717] gap-1 flex flex-row'> You are here</span> Home</div>
+                      ): isDestination ?(
+                        <div className='flex flex-row'>  <span className='p-1 mr-2 rounded-md bg-[#171717] gap-1 flex flex-row'>You are here</span> <p className='gap-1flex flex-row '>Home <IoIosArrowForward  className="mt-[3px]"/> Destinations</p></div>
+
+                      ): isThingsToDoPage ? (
+                        <div className='flex flex-row'>  <span className='p-1 mr-2 rounded-md bg-[#171717] gap-1 flex flex-row'>You are here</span> <p className='gap-1 flex flex-row'>Home <IoIosArrowForward  className="mt-[3px]"/> Things To Do</p></div>
+
+                      ):(
+                        <div className='flex flex-row'>  <span className='p-1 mr-2 rounded-md bg-[#171717] '>You are here</span> <p className='gap-1 flex flex-row'>Home <IoIosArrowForward  className="mt-[3px]"/> Destinations <IoIosArrowForward  className="mt-[3px]"/> Outlying  Islands</p></div>
+
+                      )}  
                     </div>
                 </div>
             </div>
