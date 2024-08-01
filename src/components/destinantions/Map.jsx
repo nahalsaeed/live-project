@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useState, useRef } from "react";
 import dynamic from "next/dynamic";
-import CardMap from "../CardMap";
+import CardMap from "../common/CardMap";
 
 const GoogleMap = dynamic(
   () => import("@react-google-maps/api").then((mod) => mod.GoogleMap),

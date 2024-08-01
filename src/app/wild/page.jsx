@@ -1,7 +1,7 @@
-import Footer from "@/components/Footer";
-import Header from "@/components/Header";
+import Footer from "@/components/common/Footer";
+import Header from "@/components/common/Header";
 import ExploreTheNorthIsland from "@/components/planyourtrip/ExploreTheNorthIsland";
-import SocialMedia from "@/components/SocialMedia";
+import SocialMedia from "@/components/common/SocialMedia";
 import PricingGrid from "@/components/wild/PricingGrid";
 import RealNZ from "@/components/wild/RealNZ";
 

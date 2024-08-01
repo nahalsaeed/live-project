@@ -1,4 +1,3 @@
-import DynamicText from "../DynamicText";
 import Image from "next/image";
 import relax1 from "@/assets/Relax1.webp";
 import relax2 from "@/assets/Relax2.webp";
@@ -8,6 +7,7 @@ import relax5 from "@/assets/Relax5.webp";
 import relax6 from "@/assets/Relax6.webp";
 import relax7 from "@/assets/Relax7.webp";
 import { PiArrowRightThin } from "react-icons/pi";
+import DynamicText from "../common/DynamicText";
 
 export default function OutdoorAdventure() {
 

@@ -6,11 +6,11 @@ import card2 from "@/assets/card2.png";
 import card3 from "@/assets/card3.png";
 import card4 from "@/assets/card4.png";
 import Image from "next/image";
-import Card from "../Card";
+import Card from "../common/Card";
 
 import "@/app/globals.css";
 import { PiArrowRightThin } from "react-icons/pi";
-import Tags from '../Tags';
+import Tags from '../common/Tags';
 export default function ThingsToDoCards() {
     const cardsData = [
         {

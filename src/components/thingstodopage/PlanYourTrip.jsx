@@ -1,10 +1,9 @@
 // components/PlanYourTrip.js
 
-import DynamicText from "../DynamicText";
-import Image from "next/image";
 import Plan1 from "@/assets/Plan1.webp";
 import Plan2 from "@/assets/Plan2.webp";
 import Plan3 from "@/assets/Plan3.webp";
+import Image from "next/image";
 import { PiArrowRightThin } from "react-icons/pi";
 
 export default function PlanYourTrip() {

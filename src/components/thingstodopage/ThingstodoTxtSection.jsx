@@ -1,9 +1,9 @@
 
 "use client"
 import { Akronim } from "next/font/google";
-import DynamicText from "../DynamicText";
 import { usePathname } from "next/navigation";
 import { IoIosArrowForward } from "react-icons/io";
+import DynamicText from "../common/DynamicText";
 const akronim = Akronim({
     subsets: ['latin'],
     weight: '400',

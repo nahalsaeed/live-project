@@ -1,6 +1,5 @@
-import Map from "../destinantions/Map";
-import DynamicText from "../DynamicText";
 import "@/app/globals.css";
+import Map from "../destinantions/Map";
 
 const heading = "Top places to visit in the North Island"
 const txt = "Whether you prefer mountains or beaches, here are some of the places you must visit when travelling around North Island."

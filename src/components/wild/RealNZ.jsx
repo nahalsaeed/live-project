@@ -1,7 +1,7 @@
 import "@/app/globals.css";
 import Image from "next/image";
 import realnz from "@/assets/Realnz.webp";
-import MakePlan from "../MakePlan";
+import MakePlan from "./MakePlan";
 import BookNow from "./BookNow";
 
 export default function RealNZ() {

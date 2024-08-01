@@ -2,7 +2,7 @@ import picture from "@/assets/Picture.webp";
 import picture2 from "@/assets/Picture2.webp";
 import picture4 from "@/assets/Picture4.webp";
 import picture3 from "@/assets/Picture3.webp";
-import DynamicGridSection from "../DynamicGridSection";
+import DynamicGridSection from "../common/DynamicGridSection";
 
 
 const imgData = [

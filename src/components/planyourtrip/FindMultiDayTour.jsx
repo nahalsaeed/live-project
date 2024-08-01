@@ -4,14 +4,14 @@
 import Image from "next/image";
 import Category from "@/assets/Category.png";
 import Map from "@/assets/Map.png";
-import Card from "../Card";
+import Card from "../common/Card";
 import card1 from "@/assets/plancard11.webp";
 import card2 from "@/assets/plancard12.webp";
 import card3 from "@/assets/plancard13.webp";
 import card4 from "@/assets/plancard14.webp";
 import { PiArrowRightThin } from "react-icons/pi";
 import "@/app/globals.css";
-import Tags from '../Tags';
+import Tags from '../common/Tags';
 export default function FindMultiDayTour() {
     const cardsData = [
         {

@@ -9,7 +9,7 @@ import Gallery4 from "@/assets/place4.webp";
 import Gallery5 from "@/assets/place5.webp";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
 import { useTheme } from "@material-ui/core/styles";
-import DynamicText from "../DynamicText";
+import DynamicText from "../common/DynamicText";
 
 export default function TopPlacesToVisit() {
     const theme = useTheme();

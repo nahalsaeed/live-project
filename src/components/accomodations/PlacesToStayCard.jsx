@@ -3,14 +3,14 @@
 import Image from "next/image";
 import Category from "@/assets/Category.png";
 import Map from "@/assets/Map.png";
-import Card from "../Card";
+import Card from "../common/Card";
 import card17 from "@/assets/card17.webp";
 import card18 from "@/assets/card18.webp";
 import card19 from "@/assets/card19.webp";
 import card20 from "@/assets/card20.webp";
 import { PiArrowRightThin } from "react-icons/pi";
 import "@/app/globals.css";
-import Tags from '../Tags';
+import Tags from '../common/Tags';
 export default function PlacesToStayCard() { 
     const cardsData = [
     {

@@ -8,7 +8,7 @@ import img4 from "@/assets/lower4.webp"
 import img5 from "@/assets/lower5.webp"
 import img6 from "@/assets/lower6.webp"
 import img7 from "@/assets/lower7.webp"
-import DynamicText from "../DynamicText";
+import DynamicText from "../common/DynamicText";
 
 const heading = "Lower North Island"
 const txt = "No visit to the North Island is complete without exploring the vibrant capital city of Wellington. You can also find great wine regions in the lower North Island, including Hawkes Bay, Martinborough, and Wairarapa."

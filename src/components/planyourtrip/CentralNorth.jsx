@@ -2,7 +2,6 @@
 import { ImageList, ImageListItem } from "@material-ui/core";
 import Image from "next/image";
 import { PiArrowRightThin } from "react-icons/pi";
-import DynamicText from "../DynamicText";
 import img1 from "@/assets/central.webp"
 import img2 from "@/assets/central1.webp"
 import img3 from "@/assets/central2.webp"
@@ -10,6 +9,7 @@ import img4 from "@/assets/central3.webp"
 import img5 from "@/assets/central4.webp"
 import useMediaQuery from "@material-ui/core/useMediaQuery";
 import { useTheme } from "@material-ui/core/styles";
+import DynamicText from "../common/DynamicText";
 
 const heading = "Top places to visit"
 const txt = "From the stunning beaches in Coromandel to Rotorua's geothermal wonderland, here are some spots in central North Island you shouldn't miss."

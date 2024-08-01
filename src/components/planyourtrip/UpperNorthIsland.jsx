@@ -1,9 +1,9 @@
 import { PiArrowRightThin } from "react-icons/pi";
-import DynamicText from "../DynamicText";
 import img1 from "@/assets/UpperNorth1.webp"
 import img2 from "@/assets/UpperNorth2.webp"
 
 import Image from "next/image";
+import DynamicText from "../common/DynamicText";
 const heading = "Upper North Island"
 const txt = "Start your trip along the multicultural city of Auckland to the far north where New Zealand’s political history began. Experience the beauty of the upper North Island's coastlines, landscapes, and rich history."
 export default function UpperNorthIsland() {

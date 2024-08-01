@@ -1,4 +1,4 @@
-import HeroSection from '../HeroSection';
+import HeroSection from '../common/HeroSection';
 import herosectionImg from "@/assets/herosection-img.jpg";
 
 export default function HomeHeroSection() {

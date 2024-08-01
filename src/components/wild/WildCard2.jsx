@@ -3,15 +3,15 @@ import { useState } from 'react';
 import Image from "next/image";
 import Category from "@/assets/Category.png";
 import Map from "@/assets/Map.png";
-import Card from "../Card";
+import Card from "../common/Card";
 import card1 from "@/assets/Wildcard1.webp";
 import card2 from "@/assets/Wildcard2.webp";
 import card3 from "@/assets/Wildcard3.webp";
 import card4 from "@/assets/Wildcard4.webp";
 import { PiArrowRightThin } from "react-icons/pi";
 import "@/app/globals.css";
-import Tags from '../Tags';
-import SocialMedia from '../SocialMedia';
+import Tags from '../common/Tags';
+import SocialMedia from '../common/SocialMedia';
 import ThingsToDoCards from '../planyourtrip/FindThingsToDo';
 export default function WildCard2() {
     const cardsData = [

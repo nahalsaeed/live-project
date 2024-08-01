@@ -1,6 +1,6 @@
 import herosectionImg from "@/assets/Herothingstodo.webp"; // Import the specific image
-import Footer from "@/components/Footer";
-import Header from "@/components/Header";
+import Footer from "@/components/common/Footer";
+import Header from "@/components/common/Header";
 import ListThingsTodo from "@/components/thingstodopage/ListThingsTodo";
 import PlanYourTrip from "@/components/thingstodopage/PlanYourTrip";
 import ThingsToDoCards from "@/components/thingstodopage/ThingsToDoCards";

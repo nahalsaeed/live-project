@@ -3,7 +3,7 @@ import { useState } from 'react';
 import Image from "next/image";
 import Category from "@/assets/Category.png";
 import Map from "@/assets/Map.png";
-import Card from "../Card";
+import Card from "../common/Card";
 import card1 from "@/assets/card1.png";
 import card2 from "@/assets/card2.png";
 import card3 from "@/assets/card3.png";
@@ -11,8 +11,8 @@ import card4 from "@/assets/card4.png";
 
 import { PiArrowRightThin } from "react-icons/pi";
 import "@/app/globals.css";
-import Tags from '../Tags';
-import SocialMedia from '../SocialMedia';
+import Tags from '../common/Tags';
+import SocialMedia from '../common/SocialMedia';
 
 export default function ThingsToDoCards() {
     const cardsData = [

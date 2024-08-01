@@ -4,14 +4,14 @@
 import Image from "next/image";
 import Category from "@/assets/Category.png";
 import Map from "@/assets/Map.png";
-import Card from "../Card";
+import Card from "../common/Card";
 import card13 from "@/assets/card13.webp";
 import card14 from "@/assets/card14.webp";
 import card15 from "@/assets/card15.webp";
 import card16 from "@/assets/card16.webp";
 import { PiArrowRightThin } from "react-icons/pi";
 import "@/app/globals.css";
-import Tags from '../Tags';
+import Tags from '../common/Tags';
 export default function CardSection3() { 
     const cardsData = [
     {

@@ -10,8 +10,8 @@ import Category from "@/assets/Category.png";
 import Map from "@/assets/Map.png";
 import Image from "next/image";
 import { PiArrowRightThin } from "react-icons/pi";
-import Card from "../Card";
-import Tags from '../Tags';
+import Card from "../common/Card";
+import Tags from '../common/Tags';
 export default function CardSection4() { 
     const cardsData = [
     {

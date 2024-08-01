@@ -7,9 +7,9 @@ import Category from "@/assets/Category.png";
 import Map from "@/assets/Map.png";
 import ThingsToDoCards from "../planyourtrip/FindThingsToDo";
 import { PiArrowRightThin } from "react-icons/pi";
-import Card from "../Card";
+import Card from "../common/Card";
 import Image from "next/image";
-import Tags from "../Tags";
+import Tags from "../common/Tags";
 export default function CardSection1() {
     const cardsData = [
         {

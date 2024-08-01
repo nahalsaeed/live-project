@@ -1,10 +1,10 @@
 import northimg from "@/assets/NorthHero.webp";
-import Footer from "@/components/Footer";
-import Header from "@/components/Header";
+import Footer from "@/components/common/Footer";
+import Header from "@/components/common/Header";
 import CentralNorth from "@/components/planyourtrip/CentralNorth";
 import ExploreTheNorthIsland from "@/components/planyourtrip/ExploreTheNorthIsland";
 import NorthMap from "@/components/planyourtrip/NorthMap";
-import SocialMedia from "@/components/SocialMedia";
+import SocialMedia from "@/components/common/SocialMedia";
 import ThingsToDoHeroSection from "@/components/thingstodopage/ThingsToDoHeroSection";
 import ThingstodoTxtSection from "@/components/thingstodopage/ThingstodoTxtSection";
 export default function PlanYourTrips() {

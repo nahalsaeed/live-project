@@ -4,8 +4,8 @@ import CardSection4 from "@/components/destinantions/CardSection4";
 import Map from "@/components/destinantions/Map";
 import ThingsToSee from "@/components/destinantions/ThingsToSee";
 import TopPlacesToVisit from "@/components/destinantions/TopPlacesToVisit";
-import Footer from "@/components/Footer";
-import Header from "@/components/Header";
+import Footer from "@/components/common/Footer";
+import Header from "@/components/common/Header";
 import ThingsToDoHeroSection from "@/components/thingstodopage/ThingsToDoHeroSection";
 import ThingstodoTxtSection from "@/components/thingstodopage/ThingstodoTxtSection";
 export default function Page() {

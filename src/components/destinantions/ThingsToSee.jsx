@@ -7,7 +7,7 @@ import Gallery3 from "@/assets/destinationGal5.webp";
 import Gallery4 from "@/assets/destinationGal4.webp";
 
 import "@/app/globals.css";
-import DynamicGridSection from "../DynamicGridSection";
+import DynamicGridSection from "../common/DynamicGridSection";
 
 export default function ThingsToSee() {
     const itemData = [
