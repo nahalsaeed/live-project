@@ -24,7 +24,7 @@ export default async function RootLayout({ children }) {
       <body className={cn("", montserrat.className)}>
         <Toaster position="top-center" reverseOrder={false} />
         <NextTopLoader
-          color="#f11946"
+          color="#99badd"
           initialPosition={0.08}
           crawlSpeed={400}
           height={3}

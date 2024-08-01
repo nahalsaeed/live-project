@@ -16,20 +16,31 @@ export default function ThingstodoTxtSection({para}) {
 
     const isThingsToDoPage = pathname === "/things-to-do";
     const isDestination = pathname === "/destinations";
+    const isAccomodations= pathname === "/accomodations";
+
 
 
     return (
         <div>
-            <div className="h-[280px] 2xl:h-[300px] text-white bg-[#3B5998] ">
+            <div className="h-auto  text-white bg-[#3B5998]  py-12">
                 <div className="mx-5 lg:ml-28 2xl:ml-56 flex justify-between flex-col ">
                    {isThingsToDoPage ? (
-                    <p className="text-xs mt-6 gap-1 flex flex-row">Home <IoIosArrowForward  className="mt-[3px]"/>
+                    <p className="text-xs  gap-1 flex flex-row">Home <IoIosArrowForward  className="mt-[3px]"/>
                     Things To Do</p>
                    ): isDestination ? (
-                    <p className="text-xs mt-6 gap-1 flex flex-row">Home <IoIosArrowForward  className="mt-[3px]"/>
+                    <p className="text-xs  gap-1 flex flex-row">Home <IoIosArrowForward  className="mt-[3px]"/>
                     Destinations</p>
+                   ): isAccomodations?(
+                    <div>
+
+                    <p className="text-xs  gap-1 flex flex-row">Home <IoIosArrowForward  className="mt-[3px]"/>
+                    Accomodations</p>
+                     <div className= "mt-5 w-[80%]  text-xl lg:text-3xl 2xl:text-4xl font-serif">
+                    <p > Hong Kong accommodation options are diverse, with something for every level of comfort and budget. 
+                </p> </div>
+                 </div>
                    ):(
-                    <p className="text-xs mt-6 gap-1 flex flex-row">Home <IoIosArrowForward  className="mt-[3px]"/>
+                    <p className="text-xs gap-1 flex flex-row">Home <IoIosArrowForward  className="mt-[3px]"/>
                     Destinations <IoIosArrowForward  className="mt-[3px]"/> North Island</p>
                    )
 

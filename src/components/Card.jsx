@@ -24,11 +24,8 @@ export default function Card({ imageSrc, title, description ,review}) {
                     <p className="text-[10px]">Based on {review} reviews</p>
                 </div>
                 <div className="flex  flex-col justify-normal items-center w-full h-auto my-6 ">
-                    {/* <hr className="bg-black w-[80%]" /> */}
                     <div className="w-[80%] mt-2">
-                        {/* <div className={archivo.className}>
-                            <p className="text-[#C79723] text-left   font-semibold">QUALMARK GOLD</p>
-                        </div> */}
+                       
                     </div>
                 </div>
 
