@@ -6,8 +6,7 @@ import YouMayAlsoInterestedIn from "./YouMayAlsoInterestedIn";
 export default function ExploreTheNorthIsland() {
   return (
     <div className="setCenter bg-[#F8F8F8] ">
-        <FindThingsToDo />
-        <FindPlacesToStay />
+        
        <YouMayAlsoInterestedIn/>
       </div>
 

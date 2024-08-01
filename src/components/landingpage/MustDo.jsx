@@ -52,7 +52,7 @@ export default function MustDo() {
   return (
     <div className="my-8">
       <div className="setCenter">
-        <div className="w-[85%]">
+        <div className="w-[85%] 2xl:w-[70%]">
           <h1 className="boldHeadings">#HongKongMustDo</h1>
         </div>
       </div>

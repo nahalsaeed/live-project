@@ -74,7 +74,7 @@ export default function TopPlacesToVisit() {
     <DynamicText heading={heading} />
       <div className=" h-fit overflow-y-scroll">
       <div className="flex justify-center items-center">
-        <div className="w-[88%]  mx-5 md:mx-14 2xl:w-[70%]">
+        <div className="w-[88%]  mx-5 md:mx-14 2xl:w-[75%]">
           <div className="my-10 ">
             <ImageList className="" gap={10} cols={getCols()} variant="quilted">
               {itemData.map((item, index) => (
