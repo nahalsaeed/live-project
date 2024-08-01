@@ -30,7 +30,8 @@ export default function ThingsToDo() {
             title: 'Dart River Wilderness Jet Experience',
             description: 'From HKD $ 299.00',
             review: '2632',
-            rating: 4.5
+            rating: 4.5,
+            promo:"$803 deal available"
         },
         {
             id: 3,
@@ -85,6 +86,7 @@ export default function ThingsToDo() {
                             description={card.description}
                             review={card.review}
                             rating={card.rating}
+                            promo={card.promo}
                         />
                     ))}
                 </div>

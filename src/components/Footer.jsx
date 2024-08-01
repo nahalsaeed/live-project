@@ -95,7 +95,7 @@ export default function Footer() {
           <span className='p-1 mr-2 rounded-md bg-[#171717]'>You are here</span> Home <IoIosArrowForward className="mt-[3px]" /> Accommodations
         </>
       )}
-      {!isPlacesToVisit && !isDestination && !isThingsToDoPage && !isPlanYourTrip && !isAccommodations && (
+      {!isPlacesToVisit && !isDestination && !isThingsToDoPage && !isPlanYourTrip && !isAccomodations && (
         <>
           <span className='p-1 mr-2 rounded-md bg-[#171717]'>You are here</span> Home
         </>
