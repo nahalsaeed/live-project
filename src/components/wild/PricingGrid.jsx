@@ -1,9 +1,7 @@
+import img2 from "@/assets/tripadvisor.webp";
+import Image from "next/image";
 import BookNow from "./BookNow";
 import Pricing from "./Pricing";
-import Image from "next/image";
-import img1 from "@/assets/Qualmark.webp";
-import img2 from "@/assets/tripadvisor.webp";
-import img3 from "@/assets/ChoiceAward.webp";
 
 export default function PricingGrid() {
   return (

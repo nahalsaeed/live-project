@@ -2,14 +2,14 @@ import "@/app/globals.css";
 const categories =
   [{
     title: "Adventure",
-    activities: ["Abseiling/Rappelling", "Bungy", "Canyoning", "Caving", "Climbing", "Diving & snorkeling", "Glider planes", "Hang gliding & paragliding", "Jet boating", "Kayaking", "Misc madness", "Paddleboarding", "Parasailing", "Rafting", "Skydiving", "Surfing", "Windsurfing & kitesurfing", "Zip lining",],
+    activities: ["Abseiling/Rappelling",  "Canyoning", "Caving", "Climbing", "Diving ","Snorkeling", "Paragliding","Walking & Hiking ",  "Kayaking", "Zip lining",],
   },
   {
-    title: "Art, culture & heritage",
-    activities: ["Heritage attractions", "Literature", "Maori culture", "Museums & galleries", "Performing arts", "Photography",],
+    title: "Art, Culture & Heritage",
+    activities: ["Heritage Attractions", "Literature", "Museums & Galleries", "Performing Arts", "Photography",],
   },
   {
-    title: "Cycling & mountain biking",
+    title: "Cycling & Mountain Biking",
     activities: [],
   },
   {
@@ -18,44 +18,35 @@ const categories =
 
   },
   {
-    title: "Film in NZ",
-    activities: ["Home of Middle-earth™"],
-  },
-  {
-    title: "Food & wine",
+    title: "Film in HK",
     activities: [],
   },
   {
-    title: "Hot pools & health spas",
+    title: "Food & Drink",
     activities: [],
   },
+ 
   {
     title: "Nature & wildlife",
-    activities: ["Bird watching", "Dolphins", "Gardens & city parks", "Glow worms", "Parks and reserves", "Penguins", "Scenery & landscapes", "Seals", "Stargazing", "Whale watching", "World heritage sites", "Volcanic & geothermal", "Zoos & wildlife parks",],
+    activities: ["Bird Watching", "Dolphins", "Gardens & City Parks", "Parks and Reserves",  "Scenery & Landscapes",  "Stargazing",  "World Heritage Sites", ],
   },
   {
     title: "Tours",
-    activities: ["Boat cruises", "Horse riding", "Hot air ballooning", "Off-road driving", "Rail journeys", "Sailing", "Scenic flights",],
+    activities: ["Boat Cruises",  "Sailing", "Scenic Flights",],
   },
-  {
-    title: "Skiing and snowboarding",
-    activities: ["Heliskiing", "Skiing", "Snowboarding", "Snowshoeing"],
-  },
+
   {
     title: "Sports",
-    activities: ["Fishing", "Golf", "Hunting", "Rugby"],
+    activities: ["Fishing", "Golf",],
   },
   {
     title: "Urban Attractions",
-    activities: ["Casinos", "Shopping", "Theme parks"],
+    activities: [ "Shopping", "Theme parks"],
   },
+ 
   {
-    title: "Walking & hiking",
-    activities: [],
-  },
-  {
-    title: "Holiday type",
-    activities: ["Backpacking", "Camping", "Family friendly", "Luxury Travel", "Romance", "Working holiday",],
+    title: "Holiday Type",
+    activities: ["Backpacking", "Camping", "Family Friendly", "Luxury Travel", "Romance", ,],
 
   },];
 export default function ListThingsTodo() {
@@ -64,9 +55,9 @@ export default function ListThingsTodo() {
       <div className="w-[85%] 2xl:w-[70%]">
         <div className="px-4 py-8 text-xs lg:text-sm 2xl:text-lg">
           <h1 className="boldHeadings text-3xl">Things to do in Hong Kong</h1>
-          <div className="columns-1 sm:columns-2 md:columns-3 lg:columns-6 gap-10">
+          <div className="columns-1 sm:columns-2 md:columns-3 lg:columns-6 gap-20">
             {categories.map((category, categoryIndex) => (
-              <div key={categoryIndex} className="break-inside-avoid p-1">
+              <div key={categoryIndex} className="break-inside-avoid p-1 text-nowrap">
                 <h2 className="font-semibold">{category.title}</h2>
                 <ul className=" list-inside">
                   {category.activities.map((activity, activityIndex) => (

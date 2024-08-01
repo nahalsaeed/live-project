@@ -12,7 +12,7 @@ export default function Page() {
     return (
         <div className="flex flex-col overflow-hidden">
             <Header />
-            <ThingsToDoHeroSection title="THINGS TO DO" subtitle="HONG KONG" image={herosectionImg} />
+            <ThingsToDoHeroSection title="THINGS TO DO IN" subtitle="HONG KONG" image={herosectionImg} />
             <ThingstodoTxtSection page={"Things To Do"} para={"With two unique islands, 14 national parks, and dozens of diverse cities, there are plenty of New Zealand attractions and activities to choose from."}/>
             <TopAttractions />
             <PlanYourTrip />

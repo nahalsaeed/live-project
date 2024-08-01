@@ -15,6 +15,8 @@ export default function Footer() {
     const isThingsToDoPage = pathname === "/things-to-do";
     const isDestination = pathname === "/destinations";
     const isPlanYourTrip = pathname === "/plan-your-trip";
+    const isAccomodations = pathname === "/accommodations";
+
 
 
     const [open, setOpen] = useState(null);
@@ -66,19 +68,39 @@ export default function Footer() {
         <div>
             <div className='bg-[#2D2D2D] text-white h-10 text-sm mt-10'>
                 <div className='setCenter'>
-                    <div className='w-[85%] mt-3 2xl:w-[78%] YouAreHere flex flex-row'>
-                      {isPlacesToVisit ?(
-                      <div className='flex flex-row'>  <span className='p-1 mr-2 rounded-md bg-[#171717] gap-1 flex flex-row'> You are here</span> Home</div>
-                      ): isDestination ?(
-                        <div className='flex flex-row'>  <span className='p-1 mr-2 rounded-md bg-[#171717] gap-1 flex flex-row'>You are here</span> <p className='gap-1flex flex-row '>Home <IoIosArrowForward  className="mt-[3px]"/> Destinations</p></div>
-
-                      ): isThingsToDoPage ? (
-                        <div className='flex flex-row'>  <span className='p-1 mr-2 rounded-md bg-[#171717] gap-1 flex flex-row'>You are here</span> <p className='gap-1 flex flex-row'>Home <IoIosArrowForward  className="mt-[3px]"/> Things To Do</p></div>
-
-                      ):(
-                        <div className='flex flex-row'>  <span className='p-1 mr-2 rounded-md bg-[#171717] '>You are here</span> <p className='gap-1 flex flex-row'>Home <IoIosArrowForward  className="mt-[3px]"/> Destinations <IoIosArrowForward  className="mt-[3px]"/> Outlying  Islands</p></div>
-
-                      )}  
+                    <div className='w-[85%] mt-2 2xl:w-[78%] YouAreHere flex flex-row'>
+                    <div className="flex flex-row items-center space-x-1">
+      {isPlacesToVisit && (
+        <>
+          <span className='p-1 mr-2 rounded-md bg-[#171717]'>You are here</span> Home
+        </>
+      )}
+      {isDestination && (
+        <>
+          <span className='p-1 mr-2 rounded-md bg-[#171717]'>You are here</span> Home <IoIosArrowForward className="mt-[3px]" /> Destinations
+        </>
+      )}
+      {isThingsToDoPage && (
+        <>
+          <span className='p-1 mr-2 rounded-md bg-[#171717]'>You are here</span> Home <IoIosArrowForward className="mt-[3px]" /> Things To Do
+        </>
+      )}
+      {isPlanYourTrip && (
+        <>
+          <span className='p-1 mr-2 rounded-md bg-[#171717]'>You are here</span> Home <IoIosArrowForward className="mt-[3px]" /> Destinations <IoIosArrowForward className="mt-[3px]" /> Outlying Islands
+        </>
+      )}
+      {isAccomodations && (
+        <>
+          <span className='p-1 mr-2 rounded-md bg-[#171717]'>You are here</span> Home <IoIosArrowForward className="mt-[3px]" /> Accommodations
+        </>
+      )}
+      {!isPlacesToVisit && !isDestination && !isThingsToDoPage && !isPlanYourTrip && !isAccommodations && (
+        <>
+          <span className='p-1 mr-2 rounded-md bg-[#171717]'>You are here</span> Home
+        </>
+      )}
+    </div>
                     </div>
                 </div>
             </div>

@@ -1,5 +1,5 @@
 import { cn } from "@/lib/utils";
-import { Montserrat } from "next/font/google";
+import { Archivo, Montserrat } from "next/font/google";
 // import "react-toastify/dist/ReactToastify.css";
 import "./globals.css";
 import { Toaster } from "react-hot-toast";
@@ -16,12 +16,18 @@ const montserrat = Montserrat({
   display: "swap",
 });
 
+const archivo = Archivo({
+  subsets: ['latin'],
+  weight: '400',
+});
+
+
 export default async function RootLayout({ children }) {
   return (
     // <Providers>
     <html lang="en">
 
-      <body className={cn("", montserrat.className)}>
+      <body className={cn("", archivo.className)}>
         <Toaster position="top-center" reverseOrder={false} />
         <NextTopLoader
           color="#99badd"

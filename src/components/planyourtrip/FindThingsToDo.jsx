@@ -17,29 +17,37 @@ export default function ThingsToDoCards() {
             id: 1,
             imageSrc: card1,
             title: 'Lost World Full Day Epic',
-            description: 'From NZD $ 595.00',
+            description: 'From HKD $ 595.00',
+            review: '1660',
+            rating: 5
         },
         {
             id: 2,
             imageSrc: card2,
             title: 'Dart River Wilderness Jet Experience',
-            description: 'From NZD $ 299.00',
+            description: 'From HKD $ 299.00',
+            review: '2632',
+            rating: 4.5
         },
         {
             id: 3,
             imageSrc: card3,
             title: 'KJet + Milford Sound Day Tour',
-            description: 'From NZD $ 350.00',
+            description: 'From HKD $ 350.00',
+            review: '966',
+            rating: 4.5
         },
         {
             id: 4,
             imageSrc: card4,
             title: 'Deep Canyon',
-            description: 'NZD $ 370.00 - NZD $ 2300.00',
+            description: 'HKD $ 370.00 - HKD $ 2300.00',
+            review: '353',
+            rating: 5
         },
     ];
 
-    const tags = ['Geopark Explore','History, Arts & Culture', 'Food & Drink','Walking & hiking', 'Nature & wildlife', 'Film experiences'];
+    const tags = ['Geopark Explore','History, Arts & Culture', 'Food & Drink','Walking & Hiking', 'Nature & Wildlife', 'Film Experiences'];
 
   return (
     <div>
@@ -70,12 +78,13 @@ export default function ThingsToDoCards() {
                             title={card.title}
                             description={card.description}
                             review={card.review}
+                            rating={card.rating}
                         />
                     ))}
                 </div>
 
                 <p className="text-xs text-[#767676] font-medium">
-                308 Geopark Explore activities
+                308 Adventure activities
                 </p>
 
                 <button className="bg-[#41913C] px-4 p-2 my-8 rounded-md text-white text-lg font-semibold flex felx-row gap-1">

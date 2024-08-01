@@ -21,32 +21,36 @@ export default function ThingsToDo() {
             imageSrc: card1,
             title: 'Lost World Full Day Epic',
             description: 'From HKD $ 595.00',
-            review:'1660'
+            review: '1660',
+            rating: 5
         },
         {
             id: 2,
             imageSrc: card2,
             title: 'Dart River Wilderness Jet Experience',
             description: 'From HKD $ 299.00',
-            review:'2632'
+            review: '2632',
+            rating: 4.5
         },
         {
             id: 3,
             imageSrc: card3,
             title: 'KJet + Milford Sound Day Tour',
             description: 'From HKD $ 350.00',
-            review:'966'
+            review: '966',
+            rating: 4.5
         },
         {
             id: 4,
             imageSrc: card4,
             title: 'Deep Canyon',
             description: 'HKD $ 370.00 - HKD $ 2300.00',
-            review:'353'
+            review: '353',
+            rating: 5
         },
     ];
 
-    const tags = ['Geopark Explore', 'History, Arts & Culture', 'Food & Drink experiences', 'Walking & hiking', 'Nature & wildlife', 'Film experiences'];
+    const tags = ['Geopark Explore', 'History, Arts & Culture', 'Food & Drink Experiences', 'Walking & Hiking', 'Nature & Wildlife', 'Film Experiences'];
 
     const handleTagClick = (index) => {
         setActiveTag(index);
@@ -80,12 +84,13 @@ export default function ThingsToDo() {
                             title={card.title}
                             description={card.description}
                             review={card.review}
+                            rating={card.rating}
                         />
                     ))}
                 </div>
 
                 <p className="text-xs text-[#767676] font-medium">
-                308 Adventure activities                </p>
+                308 Geopark Explore activities  </p>
 
                 <button className="bg-[#41913C] px-4 p-2 my-8 rounded-md text-white text-lg font-semibold flex felx-row gap-1">
                     See all <PiArrowRightThin className="mt-[6px]" />

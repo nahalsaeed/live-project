@@ -13,19 +13,19 @@ export default function ThingsToSee() {
     const itemData = [
       {
         img: Gallery1,
-        title: "Cities"
+        title: "Geopark Explore "
     },
     {
         img: Gallery4,
-        title: "Countryside"
+        title: "Nature & Wildlife "
     },
     {
         img: Gallery3,
-        title: "Outlying islands"
+        title: "Walking & Hiking "
     },
     {
         img: Gallery2,
-        title: "Explore all regions"
+        title: "Food & Drink "
     }
     ];
   
