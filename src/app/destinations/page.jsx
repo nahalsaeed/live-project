@@ -8,6 +8,7 @@ import Footer from "@/components/common/Footer";
 import Header from "@/components/common/Header";
 import ThingsToDoHeroSection from "@/components/thingstodopage/ThingsToDoHeroSection";
 import ThingstodoTxtSection from "@/components/thingstodopage/ThingstodoTxtSection";
+import SocialMedia from "@/components/common/SocialMedia";
 export default function Page() {
     return (
         <div className="flex flex-col overflow-hidden">
@@ -19,6 +20,7 @@ export default function Page() {
             <Map />
             <CardSection1 />
             <CardSection4 />
+            <SocialMedia/>
             <Footer />
         </div>
     );
