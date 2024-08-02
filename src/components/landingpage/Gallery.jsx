@@ -47,7 +47,7 @@ export function GalleryComponent() {
   return (
     <div className=" bg-gradient-to-b from-[#3B5998] from-80% to-white to-20% h-fit overflow-y-scroll text-white">
       <div className="flex justify-center items-center">
-        <div className="w-[88%]  mx-5 md:mx-14 2xl:w-[70%]">
+        <div className="w-[85%]  mx-5 md:mx-14 2xl:w-[70%]">
         
           <div className="mt-24">
             <h1 className="boldHeadings sm:text-3xl lg:text-5xl">Must do Hong Kong experiences</h1>
