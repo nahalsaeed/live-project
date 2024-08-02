@@ -68,7 +68,7 @@ export default function Footer() {
         <div>
             <div className='bg-[#2D2D2D] text-white h-10 text-sm mt-10'>
                 <div className='setCenter'>
-                    <div className='w-[85%] mt-2 2xl:w-[78%] YouAreHere flex flex-row'>
+                    <div className='mt-2  YouAreHere flex flex-row'>
                     <div className="flex flex-row items-center space-x-1">
       {isPlacesToVisit && (
         <>
