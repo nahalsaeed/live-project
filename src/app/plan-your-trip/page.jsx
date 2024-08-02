@@ -10,6 +10,7 @@ import ThingstodoTxtSection from "@/components/thingstodopage/ThingstodoTxtSecti
 import CardSection1 from "@/components/destinantions/CardSection1";
 import CardSection4 from "@/components/destinantions/CardSection4";
 import YouMayAlsoBeInterestedIn from "@/components/destinantions/YouMayAlsoBeInterestedIn";
+import YouMayAlsoInterestedIn from "@/components/planyourtrip/YouMayAlsoInterestedIn";
 export default function PlanYourTrips() {
   return (
     <div className="flex flex-col overflow-hidden">
@@ -22,7 +23,7 @@ export default function PlanYourTrips() {
       {/* <ExploreTheNorthIsland/> */}
       <CardSection1/>
       <CardSection4/>
-      <YouMayAlsoBeInterestedIn/>
+      <YouMayAlsoInterestedIn/>
       <SocialMedia />
       <Footer />
     </div>

@@ -8,6 +8,7 @@ import Gallery4 from "@/assets/destinationGal4.webp";
 
 import "@/app/globals.css";
 import DynamicGridSection from "../common/DynamicGridSection";
+import DynamicText from "../common/DynamicText";
 
 export default function ThingsToSee() {
     const itemData = [
@@ -31,8 +32,10 @@ export default function ThingsToSee() {
   
   return (
     <div className="my-10">
+      <div className="lg:text-nowrap">
+        <DynamicText heading={" Things to see and do in Hong Kong"} />
 
-    <div className="flex justify-center  "><h1 className="boldHeadings">Things to see and do in Hong Kong</h1></div>
+      </div>
      <DynamicGridSection imgData={itemData}/>
     </div>
   );
