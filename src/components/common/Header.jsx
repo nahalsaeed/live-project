@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import { useRouter, usePathname } from "next/navigation"; // Import useRouter and usePathname hooks
 import { FaBars, FaTimes } from "react-icons/fa";
-import Splitdylogo from "@/assets/splitdy-logo.webp";
+import Splitdylogo from "@/assets/SplitdyboatLogo.webp";
 import Link from "next/link";
 
 export default function Header() {
@@ -32,7 +32,7 @@ export default function Header() {
     <header className="bg-[#3B5998] text-white w-screen sticky top-0 z-50">
       <div className="container mx-auto flex justify-between items-center p-4">
         <div className="flex items-center">
-          <Image src={Splitdylogo} alt="Splitdy logo" className="h-auto w-[200px] lg:w-[300px] md:w-[220px]" />
+          <Image src={Splitdylogo} alt="Splitdy logo" className="h-auto w-[350px]" />
         </div>
         <nav className="hidden lg:flex cursor-pointer">
           <ul className="flex space-x-8 text-nowrap text-xs">

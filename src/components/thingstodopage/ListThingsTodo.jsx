@@ -58,7 +58,7 @@ export default function ListThingsTodo() {
           <div className="columns-1 sm:columns-2 md:columns-3 lg:columns-6 gap-20">
             {categories.map((category, categoryIndex) => (
               <div key={categoryIndex} className="break-inside-avoid p-1 text-nowrap">
-                <h2 className="font-semibold">{category.title}</h2>
+                <h2 className="font-semibold truncate">{category.title}</h2>
                 <ul className=" list-inside">
                   {category.activities.map((activity, activityIndex) => (
                     <li key={activityIndex} className="text-green-600 truncate">{activity}</li>

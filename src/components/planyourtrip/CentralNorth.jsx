@@ -71,48 +71,23 @@ export default function CentralNorth() {
   return (
     <div>
       <DynamicText heading={heading}  />
-      <div className=" h-fit overflow-y-scroll">
-        <div className="flex justify-center items-center">
-          <div className="w-[88%]  mx-5 md:mx-14 2xl:w-[70%]">
-            <div className="my-10 ">
-              <ImageList className="" gap={10} cols={getCols()} variant="quilted">
-                {itemData.map((item, index) => (
-                  <ImageListItem
-                    key={index}
-                    cols={item.colspan}
-                    rows={1}
-                    gap={2}
-                    className={`relative ${(isXs || isSm || isMd) ? "h-auto" : "gallerySection"
-                      }`}
-                  >
-                    {isXs || isSm || isMd ? (
-                      <Image
-                        className="cursor-pointer"
-                        src={item.img}
-                        alt={item.title}
-                        objectFit="cover"
-                        layout="fill"
-                      />
-                    ) : (
-                      <>
-                        <Image
-                          className="cursor-pointer"
-                          src={item.img}
-                          alt={item.title}
-                          height={item.height}
-                        />
-                      </>
-                    )}
-                    <div className=" absolute inset-0 bg-gradient-to-t from-[#0000005b] from-20% to-[#fff0] to-80% z-1"> </div>
+      <div className="setCenter mt-6">
+        <div className="w-[85%] 2xl:w-[70%] mt-2">
+          <div className="grid grid-cols-12 gap-3">
+            {itemData.map((image, index) => (
+              <div
+                key={index}
+                className={`relative ${[0, 3, 4].includes(index) ? 'col-span-12 lg:col-span-6' : 'col-span-6 lg:col-span-3'}`}
+              >
+                <Image src={image.img} alt="img" />
+                <div className=" absolute inset-0 bg-gradient-to-t from-[#0000005b] from-20% to-[#fff0] to-80% z-1"> </div>
 
-                    <div className="absolute bottom-0 left-0 flex flex-row gap-1 text-white font-bold text-sm p-5">
-                      {item.title}
-                      <PiArrowRightThin className="mt-[4px]" />
-                    </div>
-                  </ImageListItem>
-                ))}
-              </ImageList>
-            </div>
+                <div className="absolute bottom-0 left-0 flex flex-row gap-1 text-white font-bold text-sm p-5 ">
+                  {image.title}
+                  <PiArrowRightThin className="mt-[4px]" />
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </div>
