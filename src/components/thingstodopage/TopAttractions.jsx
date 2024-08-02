@@ -18,7 +18,7 @@ export default function TopAttractions() {
                         <Image src={img1} alt="img" />
                         <div className=" absolute inset-0 bg-gradient-to-t from-[#0000005b] from-20% to-[#fff0] to-80% z-1"> </div>
 
-                        <div className="absolute bottom-0 left-0 flex flex-row gap-1 text-white font-bold text-sm p-5">
+                        <div className="absolute bottom-0 left-0 flex flex-row gap-1 text-white font-bold text-sm p-5 2xl:text-lg">
                         Nature & Wildlife
                     <PiArrowRightThin className="mt-[4px]" />
                     </div>
@@ -31,7 +31,7 @@ export default function TopAttractions() {
                         <Image src={img2} alt="img" />
                         <div className=" absolute inset-0 bg-gradient-to-t from-[#0000005b] from-20% to-[#fff0] to-80% z-1"> </div>
 
-                        <div className="absolute bottom-0 left-0 flex flex-row gap-1 text-white font-bold text-sm p-5">
+                        <div className="absolute bottom-0 left-0 flex flex-row gap-1 text-white font-bold text-sm p-5 2xl:text-lg">
                         Geopark Explore
                     <PiArrowRightThin className="mt-[4px]" />
                     </div>

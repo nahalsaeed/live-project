@@ -14,57 +14,33 @@ import DynamicText from "../common/DynamicText";
 const heading = "Top places to visit"
 const txt = "From the stunning beaches in Coromandel to Rotorua's geothermal wonderland, here are some spots in central North Island you shouldn't miss."
 export default function CentralNorth() {
-  const theme = useTheme();
-  const isXs = useMediaQuery(theme.breakpoints.down("xs"));
-  const isSm = useMediaQuery(theme.breakpoints.between("xs", "sm"));
-  const isMd = useMediaQuery(theme.breakpoints.between("sm", "md"));
-  const isLg = useMediaQuery(theme.breakpoints.between("md", "lg"));
-  const isXl = useMediaQuery(theme.breakpoints.up("lg"));
 
-  const getCols = () => {
-    if (isXs) return 1;
-    if (isSm) return 2;
-    if (isMd) return 3;
-    if (isLg) return 4;
-    if (isXl) return 4;
-    return 4;
-  };
 
   const itemData = [
     {
       title: "Ninepin Islands  ",
       img: img1,
-      height: 436,
-      width: 660,
-      colspan: isXs ? 1 : 2,
+  
     },
     {
       title: "High Island & Po Pin Chau",
       img: img2,
-      height: 436,
-      width: 310,
-      colspan: 1,
+  
     },
     {
       title: "Top 20 beautiful beaches ",
       img: img3,
-      height: 436,
-      width: 310,
-      colspan: 1,
+   
     },
     {
       title: "Devil’s Fist, Port Island and Grass Island  ",
       img: img4,
-      height: 436,
-      width: 660,
-      colspan: isXs ? 1 : 2,
+    
     },
     {
       title: " Ung Kong Group",
       img: img5,
-      height: 436,
-      width: 660,
-      colspan: isXs ? 1 : 2,
+ 
     },
 
   ];
@@ -82,7 +58,7 @@ export default function CentralNorth() {
                 <Image src={image.img} alt="img" />
                 <div className=" absolute inset-0 bg-gradient-to-t from-[#0000005b] from-20% to-[#fff0] to-80% z-1"> </div>
 
-                <div className="absolute bottom-0 left-0 flex flex-row gap-1 text-white font-bold text-sm p-5 ">
+                <div className="absolute bottom-0 left-0 flex flex-row gap-1 text-white font-bold text-sm p-5 2xl:text-lg ">
                   {image.title}
                   <PiArrowRightThin className="mt-[4px]" />
                 </div>
