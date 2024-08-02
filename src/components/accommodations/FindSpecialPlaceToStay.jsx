@@ -36,11 +36,11 @@ export default function FindSpecialPlaceToStay() {
                     <div className="w-[70%] md:w-[45%] lg:w-[40%] xl:w-[37%] 2xl:w-[27%]">
                         <div className="ml-0 md:-ml-[30%]">
                             <h1 className="text-3xl lg:text-5xl font-semibold font-serif">
-                            Find a special place to stay
+                                Find a special place to stay
                             </h1>
-                                <p className="text-xs   2xl:text-lg  mt-5">
+                            <p className="text-xs   2xl:text-lg  mt-5">
                                 Hong Kongs luxury accommodation is often found in the most stunning locations. Make your journey extra special with a unique accommodation experience.                                </p>
-                         
+
                         </div>
                     </div>
                 </div>
