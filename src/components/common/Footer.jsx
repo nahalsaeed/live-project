@@ -46,8 +46,8 @@ export default function Footer() {
             id: 2,
             title: 'Contact us',
             items: [
-                { text: 'Site feedback', link: '#' },
-                { text: 'Need help?', link: '#' },
+                { text: 'Site feedback', link: '/web-information/site-feedback' },
+                { text: 'Need help?', link: '/web-information/need-help' },
             ],
         },
         {
