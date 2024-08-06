@@ -2,6 +2,7 @@
 import { useState } from 'react';
 import Map from '../destinantions/Map';
 import { IoIosArrowDown, IoIosArrowUp } from 'react-icons/io';
+import BookNow from './BookNow';
 
 
 const Price = [
@@ -44,20 +45,17 @@ const Pricing = () => {
     };
 
     return (
-        <div className="w-full lg:w-[80%] mx-auto px-4  font-serif ">
-            <div className=''>
+        <div className="w-[95%] lg:w-[80%] mx-auto px-4  font-serif ">
+            <div >
                 <h2 className="text-2xl font-semibold  mb-7 ">Price, Terms and Conditions</h2>
                 <div className='bg-[#F8F8F8] p-2 '>
-                   
                     {Price.map((item, index) => (
-                      
                         <div key={index} className="flex  justify-between  p-1 rounded-md mb-2">
                             <span >{item.text}</span>
                             <span className='mr-6 md:mr-20 lg:mr-40 font-bold'>{item.price}</span>
                         </div>
                     ))}
                 </div>
-
                 <div>
                     <div
                         className="border-b border-[#D8D8D8] py-6  cursor-pointer"
@@ -82,7 +80,6 @@ const Pricing = () => {
                         </div>
                         {open === 2 && (
                             <div className="mt-2 text-gray-600">
-                                {/* Content for Terms and conditions */}
                             </div>
                         )}
                     </div>
@@ -122,6 +119,7 @@ const Pricing = () => {
                 <h1 className='text-2xl font-semibold'> Location</h1>
                 <Map className='h-auto' />
             </div>
+            <BookNow />
         </div>
     );
 };

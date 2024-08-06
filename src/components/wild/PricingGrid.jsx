@@ -1,7 +1,8 @@
 import img2 from "@/assets/tripadvisor.webp";
 import Image from "next/image";
-import BookNow from "./BookNow";
 import Pricing from "./Pricing";
+import "@/app/globals.css";
+
 
 export default function PricingGrid() {
   return (
@@ -12,13 +13,12 @@ export default function PricingGrid() {
             <Pricing />
           </div>
           <div className="col-span-12 lg:col-span-3 mt-8 lg:mt-20">
-            <div className="grid grid-cols-2 gap-4 lg:gap-2">
-             <Image src={img2} className="col-span-2" alt="Tripadvisor" />
+              <div className="setCenter">
+               <Image src={img2} className="col-span-2" alt="Tripadvisor" height={200} />
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <BookNow />
-    </div>
   );
 }

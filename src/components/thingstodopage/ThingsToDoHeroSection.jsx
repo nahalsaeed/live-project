@@ -11,12 +11,18 @@ const aclonica = Aclonica({
     weight: '400',
 });
 
-export default function ThingsToDoHeroSection({ title, subtitle, image, description, heading }) {
+export default function ThingsToDoHeroSection({ title, subtitle, image, description, heading, button }) {
     return (
         <div className='h-[200px] md:h-auto'>
             <Image src={image} alt="hero-section-img" className="relative h-[200px] md:h-auto  w-screen" />
             <div className="absolute inset-0">
-                {title && subtitle ? (
+                { button ? (
+                  <div className="flex justify-center items-center h-[15vh] lg:h-[20vh] xl:h-[37vh] 2xl:h-[35vh] mt-4 md:mt-24">
+                  <button className="bg-black rounded-full border-4 md:border-6 lg:border-8 p-3 md:p-5 lg:p-7"></button>
+              </div>
+              
+
+                ) : title && subtitle ? (
                     <div>
 
                         <div className="text-white mt-20 md:mt-20 lg:mt-32 2xl:mt-44 ml-24 w-[40%] items-start relative">
