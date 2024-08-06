@@ -11,7 +11,6 @@ export default function page() {
             <Header />
             <HeroSectionWebInfo title={"Need Help?"} />
             <WebInformationGrid />
-            <SiteFeedBackForm/>
             <Footer />
         </div>
     )

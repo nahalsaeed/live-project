@@ -7,6 +7,7 @@ import { usePathname } from "next/navigation";
 import { IoIosArrowForward } from "react-icons/io";
 import { useState } from 'react';
 import { IoIosArrowDown, IoIosArrowUp } from 'react-icons/io';
+import Link from 'next/link';
 
 export default function Footer() {
 
@@ -130,12 +131,12 @@ export default function Footer() {
                                     </div>
                                 ))}
 
-                                <div className='flex flex-col md:flex-row lg:flex-col gap-1 md:gap-10 lg:gap-0 xl:gap-2 xl:flex-row col-span-12 lg:col-span-6 justify-center items-center md:items-start md:-ml-[10%] lg:ml-[15%] mt-2'>
+                               <div className='flex flex-col md:flex-row lg:flex-col gap-1 md:gap-10 lg:gap-0 xl:gap-2 xl:flex-row col-span-12 lg:col-span-6 justify-center items-center md:items-start md:-ml-[10%] lg:ml-[15%] mt-2'>
                                     <div>
-                                        <Image src={footerlogo} alt='logo' height={98} width={98} />
+                                      <Link href="/">  <Image src={footerlogo} alt='logo' height={98} width={98} /></Link>
                                     </div>
                                     <p className='items-start mt-7 text-xl lg:text-2xl text-black text-nowrap'>
-                                        <span className='font-bold'>Splitdyboat</span> 香港夾船平台
+                                    <Link href="/"> <span className='font-bold'>Splitdyboat</span> 香港夾船平台 </Link>
                                     </p>
                                 </div>
                             </div>
