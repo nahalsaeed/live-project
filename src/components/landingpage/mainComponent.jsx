@@ -8,8 +8,6 @@ import ThingsToDoHeroSection from '../thingstodopage/ThingsToDoHeroSection'
 import ThingsToDo from './ThingsToDo'
 import northimg from "@/assets/NorthHero.webp";
 
-
-
 export default function MainComponent() {
     return (
         <>

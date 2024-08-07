@@ -55,12 +55,12 @@ export default function Footer() {
             id: 3,
             title: 'Help',
             items: [
-                { text: 'FAQs', link: '#' },
+                { text: 'FAQs', link: '/web-information/faq' },
                 { text: 'About newzealand.com', link: '#' },
                 { text: 'Adding your business and deals', link: '#' },
                 { text: 'Linking to newzealand.com', link: '#' },
-                { text: 'Terms of use', link: '#' },
-                { text: 'Privacy Policy', link: '#' },
+                { text: 'Terms of use', link: '/web-information/terms-of-use' },
+                { text: 'Privacy Policy', link: '/web-information/privacy-policy' },
             ],
         },
     ];
@@ -73,32 +73,32 @@ export default function Footer() {
                     <div className="flex flex-row items-center space-x-1">
       {isPlacesToVisit && (
         <>
-          <span className='p-1 mr-2 rounded-md bg-[#171717]'>You are here</span> Home
+          <span className='p-1 mr-2 rounded-md bg-[#171717]'>You are here</span> <a href="/">Home</a> 
         </>
       )}
       {isDestination && (
         <>
-          <span className='p-1 mr-2 rounded-md bg-[#171717]'>You are here</span> Home <IoIosArrowForward className="mt-[3px]" /> Destinations
+          <span className='p-1 mr-2 rounded-md bg-[#171717]'>You are here</span> <a href='/'>Home</a> <IoIosArrowForward className="mt-[2px]" /> <a href="/destinations">Destinations</a> 
         </>
       )}
       {isThingsToDoPage && (
         <>
-          <span className='p-1 mr-2 rounded-md bg-[#171717]'>You are here</span> Home <IoIosArrowForward className="mt-[3px]" /> Things To Do
+          <span className='p-1 mr-2 rounded-md bg-[#171717]'>You are here</span> <a href="/">Home</a> <IoIosArrowForward className="mt-[2px]" /> <a href="/things-to-do">Things To Do</a> 
         </>
       )}
       {isPlanYourTrip && (
         <>
-          <span className='p-1 mr-2 rounded-md bg-[#171717]'>You are here</span> Home <IoIosArrowForward className="mt-[3px]" /> Destinations <IoIosArrowForward className="mt-[3px]" /> Outlying Islands
+          <span className='p-1 mr-2 rounded-md bg-[#171717]'>You are here</span> <a href="/">Home</a>  <IoIosArrowForward className="mt-[2px]" /> <a href="/destinations">Destinations</a> <IoIosArrowForward className="mt-[2px]" /> <a href="/plan-your-trip">Outlying Islands</a> 
         </>
       )}
       {isAccomodations && (
         <>
-          <span className='p-1 mr-2 rounded-md bg-[#171717]'>You are here</span> Home <IoIosArrowForward className="mt-[3px]" /> Accommodations
+          <span className='p-1 mr-2 rounded-md bg-[#171717]'>You are here</span> <a href="/">Home</a>  <IoIosArrowForward className="mt-[2px]" /> <a href="/accommodations">Accommodations</a>
         </>
       )}
       {!isPlacesToVisit && !isDestination && !isThingsToDoPage && !isPlanYourTrip && !isAccomodations && (
         <>
-          <span className='p-1 mr-2 rounded-md bg-[#171717]'>You are here</span> Home
+          <span className='p-1 mr-2 rounded-md bg-[#171717]'>You are here</span> <a href="/">Home</a> 
         </>
       )}
     </div>

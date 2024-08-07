@@ -1,6 +1,7 @@
 import React from 'react'
 
-export default function DynamicInformationText({ content }) {
+export default function 
+DynamicInformationText({ content }) {
     return (
         <div >
         {content.map((data, index) => (

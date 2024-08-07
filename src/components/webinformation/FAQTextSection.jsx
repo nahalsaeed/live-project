@@ -47,7 +47,7 @@ export default function FAQTextSection() {
         <div>
             <div className='setCenter'>
                 <div className="w-[70%] md:w-[45%] lg:w-[40%] xl:w-[37%] 2xl:w-[27%]">
-                    <div className="ml-0 md:-ml-[30%]">
+                    <div className="ml-0 md:-ml-[70%]">
                        <div className='my-14'>
                         <p>This page provides answers to common questions from travelers to New Zealand.</p>
                         {list.map((list, index) => (

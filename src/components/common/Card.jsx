@@ -29,7 +29,7 @@ export default function Card({ imageSrc, title, description, review, rating, pro
             </div>
             <div className="bg-[#F8F8F8] w-full absolute bottom-0">
                 {rating != null ? (
-                    <div className="flex flex-row gap-2 ml-7 mt-4">
+                    <div className="flex flex-row gap-2 ml-3 mt-4">
                         <Image src={owl} alt="owl" className="h-4 w-auto" />
                         <ReviewBar rating={rating} />
                         <p className="text-[10px]">Based on {review} reviews</p>
