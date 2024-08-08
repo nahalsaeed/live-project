@@ -5,7 +5,7 @@ import HeroSectionWebInfo from "./HeroSectionWebInfo";
 export default function FAQ() {
   return (
     <div>
-      <HeroSectionWebInfo title={"FREQUENTLY ASKED QUESTIONS"}/>
+      <HeroSectionWebInfo title={"Frequwntly Asked Questions"}/>
       <FAQTextSection/>
     </div>
   )

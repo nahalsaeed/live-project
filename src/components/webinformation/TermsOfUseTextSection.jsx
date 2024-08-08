@@ -80,7 +80,7 @@ export default function TermsOfUseTextSection() {
     <div>
       <div className='setCenter'>
         <div className="w-[70%] md:w-[45%] lg:w-[40%] xl:w-[37%] 2xl:w-[27%]">
-          <div className="ml-0 md:-ml-[70%]">
+          <div className="ml-0 md:-ml-[40%] lg:-ml-[50%] ">
             <div className='my-14'>
               <DynamicInformationText content={text} />
             </div>
